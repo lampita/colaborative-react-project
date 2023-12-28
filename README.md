@@ -23,9 +23,9 @@ Las imágenes a utilizar, el estilo de íconos, el nombre de la empresa u organi
 3. La galería de imágenes de Instagram deberá desplegar al menos 10 imágenes en un carrusel.
 
 ## **Integrantes**
-Fabio Antunez
-Alejandro Baudino
-Kevin Cambiasso
-José Lamparelli
-Juan Ignacio Lopez
-Juan Soto
+Fabio Antunez -
+Alejandro Baudino -
+Kevin Cambiasso -
+José Lamparelli -
+Juan Ignacio Lopez -
+Juan Soto.
