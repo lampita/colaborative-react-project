@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
 const inter = Inter({ subsets: ['latin'] })
+import styles from '@/styles/Home.module.css'
+import CartNavBar from './components/nav-bar/cart_nav_bar'
+
+
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="./assets/logo.png" />
       </Head>
       <main>
-
+<CartNavBar />
       </main>
     </>
   )
