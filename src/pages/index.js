@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import styles from '@/styles/Home.module.css'
 import CartNavBar from './components/nav-bar/cart_nav_bar'
+
 
 
 

@@ -1,0 +1,35 @@
+.img_display {
+  width: 9.375rem;
+}
+@media screen and (max-width: 576px) {
+  .img_display {
+    display: none;
+  }
+}
+.img_display {
+  width: 9.375rem;
+}
+.brand,
+.container {
+  color: white;
+  background-color: black;
+}
+
+.brand:hover {
+  color: #fff;
+}
+
+.container_1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.burga_boton {
+  background-color: #616161;
+}
+.container_2 {
+  background-color: black;
+  color: white;
+}
