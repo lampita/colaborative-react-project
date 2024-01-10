@@ -9,8 +9,15 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
 import Dropdown from "react-bootstrap/Dropdown";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Toast from "react-bootstrap/Toast";
+import { useState } from "react";
 
-function CartNavBar() {
+function CartNavBar(props) {
+  const [showA, setShowA] = useState(false);
+  const toggleShowA = () => setShowA(!showA);
+
   return (
     <>
       <Navbar expand="sm" sticky="top" style={{ padding: "0rem" }}>
@@ -18,7 +25,7 @@ function CartNavBar() {
           <Image
             roundedCircle
             src="nav-bar/logo.jpg"
-            alt="icono del comercio"
+            alt="icono comercial"
             className={styles.img_display}
           />
 
@@ -38,21 +45,56 @@ function CartNavBar() {
                   placeholder="Juegos disponibles"
                   aria-label="Buscador"
                 />
+
                 <Button variant="outline-secondary">Buscar</Button>
               </InputGroup>
-              <div>
+              <Button
+                style={{ backgroundColor: "black", border: "black" }}
+                type="button"
+                onClick={toggleShowA}
+              >
                 <Image
                   className="cart_img"
                   src="/nav-bar/icono_carrito.svg"
                   alt="icono de un carrito"
                 />
-                <Badge bg="danger">0</Badge>
-              </div>
+
+                <Badge
+                  pill
+                  bg="danger"
+                  style={
+                    props.num
+                      ? { display: "inline-block" }
+                      : { display: "none" }
+                  }
+                >
+                  {props.num}
+                </Badge>
+              </Button>
             </Container>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      <div className="container" style={{ position: "relative" }}>
+        <Row style={{ position: "absolute", zIndex: "10", left: "70%" }}>
+          <Col>
+            <Toast show={showA} onClose={toggleShowA}>
+              <Toast.Header
+                style={{
+                  backgroundColor: "#464d88",
+                  justifyContent: "flex-end",
+                }}
+              ></Toast.Header>
+              <Toast.Body
+                style={{ backgroundColor: "silver", textAlign: "center" }}
+              >
+                Para acceder al carrito primero tienes que seleccionar
+                productos.
+              </Toast.Body>
+            </Toast>
+          </Col>
+        </Row>
+      </div>
       <Navbar expand="sm" style={{ padding: "0rem" }}>
         <Container
           className={styles.container_2}
@@ -81,28 +123,33 @@ function CartNavBar() {
                 backgroundColor: "#585858",
                 padding: "0",
               }}
+              className={styles.press}
             >
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-1"
+                className={styles.press}
               >
                 TODOS LOS JUEGOS
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-2"
+                className={styles.press}
               >
                 MAS VENDIDOS
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-3"
+                className={styles.press}
               >
                 OFERTAS
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-3"
+                className={styles.press}
               >
                 PREVENTAS
               </Dropdown.Item>
@@ -127,22 +174,26 @@ function CartNavBar() {
                 backgroundColor: "#585858",
                 padding: "0",
               }}
+              className={styles.press}
             >
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-1"
+                className={styles.press}
               >
                 ESSENTIAL
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-2"
+                className={styles.press}
               >
                 EXTRA
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-3"
+                className={styles.press}
               >
                 DELUXE
               </Dropdown.Item>
@@ -164,22 +215,26 @@ function CartNavBar() {
                 backgroundColor: "#585858",
                 padding: "0",
               }}
+              className={styles.press}
             >
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-1"
+                className={styles.press}
               >
                 PSN CARDS
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-2"
+                className={styles.press}
               >
                 NINTENDO ESHOP
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-3"
+                className={styles.press}
               >
                 PLAYSTATION PLUS
               </Dropdown.Item>
@@ -203,28 +258,33 @@ function CartNavBar() {
                 backgroundColor: "#585858",
                 padding: "0",
               }}
+              className={styles.press}
             >
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-1"
+                className={styles.press}
               >
                 COMO COMPRAR
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-2"
+                className={styles.press}
               >
                 OPINIONES
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-3"
+                className={styles.press}
               >
                 FAQ
               </Dropdown.Item>
               <Dropdown.Item
                 style={{ color: "white", fontSize: "0.8rem" }}
                 href="#/action-3"
+                className={styles.press}
               >
                 TERMINOS Y CONDICIONES
               </Dropdown.Item>
