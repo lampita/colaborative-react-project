@@ -9,14 +9,19 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
 import Dropdown from "react-bootstrap/Dropdown";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Toast from "react-bootstrap/Toast";
+import { ToastContainer } from "react-bootstrap";
 import { useState } from "react";
 
 function CartNavBar(props) {
   const [showA, setShowA] = useState(false);
-  const toggleShowA = () => setShowA(!showA);
+  function toggleShowA() {
+    if ((props.num < 1) | null) {
+      setShowA(!showA);
+    } else {
+      alert("Aca viene el Modal con los productos del carrito!");
+    }
+  }
 
   return (
     <>
@@ -37,7 +42,6 @@ function CartNavBar(props) {
             aria-controls="responsive-navbar-nav"
             className={styles.burga_boton}
           />
-
           <Navbar.Collapse id="responsive-navbar-nav">
             <Container className={styles.container_1}>
               <InputGroup style={{ width: "80%" }}>
@@ -48,6 +52,7 @@ function CartNavBar(props) {
 
                 <Button variant="outline-secondary">Buscar</Button>
               </InputGroup>
+
               <Button
                 style={{ backgroundColor: "black", border: "black" }}
                 type="button"
@@ -58,7 +63,6 @@ function CartNavBar(props) {
                   src="/nav-bar/icono_carrito.svg"
                   alt="icono de un carrito"
                 />
-
                 <Badge
                   pill
                   bg="danger"
@@ -75,26 +79,26 @@ function CartNavBar(props) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className="container" style={{ position: "relative" }}>
-        <Row style={{ position: "absolute", zIndex: "10", left: "70%" }}>
-          <Col>
-            <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header
-                style={{
-                  backgroundColor: "#464d88",
-                  justifyContent: "flex-end",
-                }}
-              ></Toast.Header>
-              <Toast.Body
-                style={{ backgroundColor: "silver", textAlign: "center" }}
-              >
-                Para acceder al carrito primero tienes que seleccionar
-                productos.
-              </Toast.Body>
-            </Toast>
-          </Col>
-        </Row>
+
+      <div className="position-relative">
+        <ToastContainer
+          className="p-3"
+          position={"top-end"}
+          style={{ zIndex: 100 }}
+        >
+          <Toast show={showA} onClose={toggleShowA}  autohide={true} delay={3000} >
+            <Toast.Header style={{ justifyContent: "space-between", backgroundColor:"#2a5272" }}  closeVariant="white">
+              <h4 style={{color:"white"}}>Carrito Vacío</h4>
+            </Toast.Header>
+            <Toast.Body>
+              <p style={{ textAlign: "center" }}>
+                Para acceder a tu Carrito, primero debes agregar productos.
+              </p>
+            </Toast.Body>
+          </Toast>
+        </ToastContainer>
       </div>
+
       <Navbar expand="sm" style={{ padding: "0rem" }}>
         <Container
           className={styles.container_2}
