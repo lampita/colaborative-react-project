@@ -14,10 +14,10 @@ import { ToastContainer } from "react-bootstrap";
 import { useState } from "react";
 
 function CartNavBar(props) {
-  const [showA, setShowA] = useState(false);
-  function toggleShowA() {
-    if ((props.num < 1) | null) {
-      setShowA(!showA);
+  const [verToast, setVerToast] = useState(false);
+  function toggleVerToast() {
+    if (props.num < 1 || null) {
+      setVerToast(!verToast);
     } else {
       alert("Aca viene el Modal con los productos del carrito!");
     }
@@ -56,7 +56,7 @@ function CartNavBar(props) {
               <Button
                 style={{ backgroundColor: "black", border: "black" }}
                 type="button"
-                onClick={toggleShowA}
+                onClick={toggleVerToast}
               >
                 <Image
                   className="cart_img"
@@ -86,9 +86,20 @@ function CartNavBar(props) {
           position={"top-end"}
           style={{ zIndex: 100 }}
         >
-          <Toast show={showA} onClose={toggleShowA}  autohide={true} delay={3000} >
-            <Toast.Header style={{ justifyContent: "space-between", backgroundColor:"#2a5272" }}  closeVariant="white">
-              <h4 style={{color:"white"}}>Carrito Vacío</h4>
+          <Toast
+            show={verToast}
+            onClose={toggleVerToast}
+            autohide={true}
+            delay={3000}
+          >
+            <Toast.Header
+              style={{
+                justifyContent: "space-between",
+                backgroundColor: "#2a5272",
+              }}
+              closeVariant="white"
+            >
+              <h4 style={{ color: "white" }}>Carrito Vacío</h4>
             </Toast.Header>
             <Toast.Body>
               <p style={{ textAlign: "center" }}>
