@@ -1,4 +1,4 @@
-import CardsContainer from '@/pages/components/cards-a/CardsContainer'
+import CardsContainer from './CardsContainer'
 
 
 
@@ -7,7 +7,6 @@ const Section = () => {
     return (
         <>
             <section>
-                <h2>Titulo de la seccion</h2>
                 <CardsContainer/>
             </section>
 
@@ -15,6 +14,8 @@ const Section = () => {
             {`
             section {
                 text-align: center;
+                padding: 40px 0;
+                margin: 20px;
                 }
             `}
             </style>
