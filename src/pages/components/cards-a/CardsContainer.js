@@ -37,37 +37,37 @@ const tarjetas = [
     img: ANTHEM,
     title: "Anthem",
     bgcolor: "blue",
-    }
+    },
     {
     id:5,
     img: BORDERLANDS,
     title: "Borderlands 3",
     bgcolor: "blue",
-    }
+    },
     {
     id:6,
     img: AO-TENNIS,
     title: "Australian Open Tennis",
     bgcolor: "blue",
-    }
+    },
     {
     id:7,
     img: ASSASSING-CREED,
     title: "Assassing Creed",
     bgcolor: "blue",
-    }
+    },
     {
     id:8,
     img: ASSETTO-CORSA,
     title: "Assetto Corsa",
     bgcolor: "blue",
-    }
+    },
     {
     id:9,
     img: BATTLEFIELD,
     title: "BattleField",
     bgcolor: "blue",
-    }
+    },
     {
     id:10,
     img: BEN-10,
