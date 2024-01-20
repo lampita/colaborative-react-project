@@ -54,7 +54,7 @@ function CartNavBar(props) {
               </InputGroup>
 
               <Button
-                style={{ backgroundColor: "black", border: "black" }}
+                style={{ backgroundColor: "black", border: "black",}}
                 type="button"
                 onClick={toggleVerToast}
               >
