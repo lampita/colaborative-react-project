@@ -4,6 +4,7 @@ const inter = Inter({ subsets: ["latin"] });
 import CartNavBar from "./components/nav-bar/cart_nav_bar";
 import Seccion from "./components/cards/Seccion";
 import GamesContextProvider from "./context/GamesContextProvider";
+import ModalBusqueda from "./components/nav-bar/modal_busqueda";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           <CartNavBar num={1} />
           <Seccion />
         </GamesContextProvider>
+        <ModalBusqueda />
+
+
       </main>
     </>
   );

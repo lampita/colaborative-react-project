@@ -16,7 +16,7 @@ import { useState } from "react";
 function CartNavBar(props) {
   const [verToast, setVerToast] = useState(false);
   function toggleVerToast() {
-    if (props.num < 1 || null) {
+    if (props.num < 1 || false) {
       setVerToast(!verToast);
     } else {
       alert("Aca viene el Modal con los productos del carrito!");
