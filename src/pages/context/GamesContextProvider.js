@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 
+
 export const GamesContext = createContext();
 
 const GamesContextProvider = ({ children }) => {
@@ -10,7 +11,9 @@ const GamesContextProvider = ({ children }) => {
       agotado: false,
 
       image:
-        "https://storegamesargentina.com/wp-content/uploads/2023/07/XBOX-SERIES-5-2-220x275.png",
+       
+        <img src="XBOX-SERIES-5-2-220x275" alt="FC 24 PS4" />
+        ,
       title: "EA SPORTS FC 24 PS4",
       price: "24490",
     },
