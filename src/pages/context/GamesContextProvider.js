@@ -18,8 +18,7 @@ const productos= [
     stars: "5",
     agotado: false,
 
-    image:
-      "https://storegamesargentina.com/wp-content/uploads/2023/07/XBOX-SERIES-5-2-220x275.png",
+    image: "https://storegamesargentina.com/wp-content/uploads/2023/07/XBOX-SERIES-5-2-220x275.png",
     title: "EA SPORTS FC 24 PS4",
     price: "24490",
   },

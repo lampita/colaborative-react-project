@@ -5,6 +5,7 @@ import CartNavBar from "./components/nav-bar/cart_nav_bar";
 import Seccion from "./components/cards/Seccion";
 import GamesContextProvider from "./context/GamesContextProvider";
 import ModalBusqueda from "./components/nav-bar/modal_busqueda";
+import ShoppingCart from "./components/shopping-cart/ShoppingCart";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         </GamesContextProvider>
         <ModalBusqueda />
 
-
+        <ShoppingCart />
       </main>
     </>
   );
