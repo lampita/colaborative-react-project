@@ -4,6 +4,7 @@ const inter = Inter({ subsets: ["latin"] });
 import CartNavBar from "./components/nav-bar/cart_nav_bar";
 import Seccion from "./components/cards/Seccion";
 import GamesContextProvider from "./context/GamesContextProvider";
+import Carousel from ".carrucel";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
         <GamesContextProvider>
           <CartNavBar num={1} />
           <Seccion />
+          <div className="container">
+            <Carousel />
+          </div>
         </GamesContextProvider>
       </main>
     </>
