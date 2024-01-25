@@ -88,6 +88,11 @@ const tarjetas = [
     img: "img-cards-a/ARMORED-CORE-VI.jpg",
     title: "Armored 6",
     },
+    {
+    id:18,
+    img: "img-cards-a/ASSASSINS-CREED-VALHALLA.jpg",
+    title: "Assassins Creed Valhalla",
+    },
 ];
 
 const CardsContainer = () => {
