@@ -4,7 +4,7 @@ const inter = Inter({ subsets: ["latin"] });
 import CartNavBar from "./components/nav-bar/cart_nav_bar";
 import Seccion from "./components/cards/Seccion";
 import GamesContextProvider from "./context/GamesContextProvider";
-import Carousel from ".carrucel";
+import Carousel from "./carrucel";
 
 export default function Home() {
   return (
