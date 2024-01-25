@@ -1,7 +1,7 @@
 
 
 
-const Button = () => {
+const Button = ({bgcolor}) => {
     return (
         <>
         <button>Comprar</button>
@@ -10,7 +10,7 @@ const Button = () => {
             {`
                 button {
                     color: white;
-                    background-color: blue;
+                    background-color: ${bgcolor ? "blue" : bgcolor};
                     border-radius: .5rem;
                     box-shadow: 1px 2px 2px black;
                     padding: 10px 20px;

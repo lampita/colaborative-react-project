@@ -20,7 +20,7 @@ const Cards = ({tarjetasvarias}) => {
             {`
                 figure {
                     width: 200px;
-                    height: 245px;
+                    height: 275px;
                     border: 1px solid black;
                     display: flex;
                     flex-direction: column;
@@ -28,7 +28,7 @@ const Cards = ({tarjetasvarias}) => {
                 }
                 img {
                     width: 100%;
-                    height: 45%
+                    height: 275px;
                     object-fit: cover;
                 }
               

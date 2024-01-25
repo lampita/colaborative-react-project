@@ -2,6 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Section from './components/cards-a/Section'
+import Card from './components/cards-a/Cards'
+import CardsContainer from './components/cards-a/CardsContainer'
+import Button from './components/cards-a/Button'
+import Cards from './components/cards-a/Cards'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="./assets/logo.png" />
       </Head>
       <main>
-
+      <Section />
       </main>
     </>
   )
