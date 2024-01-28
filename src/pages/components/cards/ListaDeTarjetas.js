@@ -1,5 +1,5 @@
 import { TYPES } from "@/pages/actions/actions";
-import Product from "./Products";
+import Product from "./Productos";
 import { CartContext, CartDispatchContext } from "@/pages/context/ShoppingContext";
 import { useContext } from "react";
 

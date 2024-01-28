@@ -3,7 +3,7 @@ import { shoppingInitialState } from "@/pages/initial-state/InitialState";
 import { TYPES } from "@/pages/actions/actions";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer";
 import CartItem from "./CartItem";
-import Product from "../cards/products";
+import Product from "../cards/Productos";
 import { CartContext, CartDispatchContext } from "@/pages/context/ShoppingContext";
 
 
