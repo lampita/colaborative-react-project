@@ -21,8 +21,9 @@ export default function Home() {
         <GamesContextProvider>
           <CartNavBar num={1} />
           <Seccion />
-          <Footer />
+          
         </GamesContextProvider>
+        <Footer />
       </main>
     
     </>
