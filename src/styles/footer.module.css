@@ -1,0 +1,33 @@
+
+
+.footer_section {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Estilos personalizados para el tamaño del icono */
+    .iconotamaño {
+    font-size: 24px; 
+}
+/* Estilos personalizados para el boton */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #463d57;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+

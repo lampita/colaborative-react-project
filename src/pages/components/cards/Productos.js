@@ -4,6 +4,7 @@ const Product = ({ product, addToCart }) => {
   const { image, name, price, stars, agotado, id } = product;
   
 
+
   return (
     <>
       <figure>
@@ -19,7 +20,9 @@ const Product = ({ product, addToCart }) => {
             <h4>${price} </h4>
           </div>
         </figcaption>
+
         <button onClick={() => {addToCart(id)}} >Agregar</button>
+
       </figure>
 
       <style jsx>{`

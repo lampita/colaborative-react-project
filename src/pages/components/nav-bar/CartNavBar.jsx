@@ -33,6 +33,7 @@ function CartNavBar() {
 
 
 
+
   return (
     <>
       <ModalCompras props={verModal} />
@@ -68,8 +69,10 @@ function CartNavBar() {
               <Button
                 style={{ backgroundColor: "black", border: "black" }}
                 type="button"
+
                 onClick={toggleVerModal}
                 onMouseUp={resetVerModal}
+
               >
                 <Image
                   className="cart_img"
@@ -79,9 +82,11 @@ function CartNavBar() {
                 <Badge
                   pill
                   bg="danger"
+
                   style={{ display: "inline-block" }}
                 >
                   {totalQuantity}
+
                 </Badge>
               </Button>
             </Container>

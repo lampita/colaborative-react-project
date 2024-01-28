@@ -9,6 +9,10 @@ import CartNavBar from "./components/nav-bar/CartNavBar.jsx";
 import CartEngine from "@/pages/components/nav-bar/CartEngine.jsx";
 import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
 
+
+import Footer from "./components/footer/footer";
+
+
 import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
@@ -33,6 +37,10 @@ export default function Home() {
             <ListaDeTarjetas />
           </CartDispatchContext.Provider>
         </CartContext.Provider>
+
+
+        <Footer />
+
       </main>
     </>
   );
