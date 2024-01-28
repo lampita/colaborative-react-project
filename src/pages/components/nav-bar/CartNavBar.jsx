@@ -9,22 +9,33 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
 import Dropdown from "react-bootstrap/Dropdown";
-import Toast from "react-bootstrap/Toast";
-import { ToastContainer } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import { CartContext } from "@/pages/context/ShoppingContext.jsx";
+import ModalCompras from "./ModalCompras";
 
-function CartNavBar(props) {
-  const [verToast, setVerToast] = useState(false);
-  function toggleVerToast() {
-    if (props.num < 1 || null) {
-      setVerToast(!verToast);
-    } else {
-      alert("Aca viene el Modal con los productos del carrito!");
-    }
+function CartNavBar() {
+  const [verModal, setVerModal] = useState(false);
+  const contenido = useContext(CartContext);
+  const { cart } = contenido;
+  const totalQuantity = cart.reduce(
+    (qty, product) => qty + product.quantity,
+    0
+  );
+
+  function resetVerModal() {
+    setVerModal(false);
   }
+  function toggleVerModal() {
+    setVerModal(true);
+  }
+
+
 
   return (
     <>
+
+      <ModalCompras props={verModal} />
+
       <Navbar expand="sm" sticky="top" style={{ padding: "0rem" }}>
         <Container fluid className={styles.container}>
           <Image
@@ -54,9 +65,10 @@ function CartNavBar(props) {
               </InputGroup>
 
               <Button
-                style={{ backgroundColor: "black", border: "black",}}
+                style={{ backgroundColor: "black", border: "black" }}
                 type="button"
-                onClick={toggleVerToast}
+                onClick={toggleVerModal}
+                onMouseUp={resetVerModal}
               >
                 <Image
                   className="cart_img"
@@ -66,49 +78,15 @@ function CartNavBar(props) {
                 <Badge
                   pill
                   bg="danger"
-                  style={
-                    props.num
-                      ? { display: "inline-block" }
-                      : { display: "none" }
-                  }
+                  style={{ display: "inline-block" }}
                 >
-                  {props.num}
+                  {totalQuantity}
                 </Badge>
               </Button>
             </Container>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <div className="position-relative">
-        <ToastContainer
-          className="p-3"
-          position={"top-end"}
-          style={{ zIndex: 100 }}
-        >
-          <Toast
-            show={verToast}
-            onClose={toggleVerToast}
-            autohide={true}
-            delay={3000}
-          >
-            <Toast.Header
-              style={{
-                justifyContent: "space-between",
-                backgroundColor: "#2a5272",
-              }}
-              closeVariant="white"
-            >
-              <h4 style={{ color: "white" }}>Carrito Vacío</h4>
-            </Toast.Header>
-            <Toast.Body>
-              <p style={{ textAlign: "center" }}>
-                Para acceder a tu Carrito, primero debes agregar productos.
-              </p>
-            </Toast.Body>
-          </Toast>
-        </ToastContainer>
-      </div>
 
       <Navbar expand="sm" style={{ padding: "0rem" }}>
         <Container

@@ -1,12 +1,23 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-import CartNavBar from "./components/nav-bar/cart_nav_bar";
-import Seccion from "./components/cards/Seccion";
-import GamesContextProvider from "./context/GamesContextProvider";
-import Carousel from "./carrucel";
+
+import {
+  CartContext,
+  CartDispatchContext,
+} from "./context/ShoppingContext.jsx";
+import CartNavBar from "./components/nav-bar/CartNavBar.jsx";
+import CartEngine from "@/pages/components/nav-bar/CartEngine.jsx";
+import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
+
+import { useReducer } from "react";
+import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
+import { shoppingInitialState } from "./initial-state/InitialState.jsx";
+
 
 export default function Home() {
+  const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
+
   return (
     <>
       <Head>
@@ -17,13 +28,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <GamesContextProvider>
-          <CartNavBar num={1} />
-          <Seccion />
-          <div className="container">
-            <Carousel />
-          </div>
-        </GamesContextProvider>
+
+        <CartContext.Provider value={state}>
+          <CartDispatchContext.Provider value={dispatch}>
+            <CartEngine />
+            <CartNavBar num={1} />
+            <ListaDeTarjetas />
+          </CartDispatchContext.Provider>
+        </CartContext.Provider>
+
       </main>
     </>
   );
