@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+
 import {
   CartContext,
   CartDispatchContext,
@@ -12,6 +13,7 @@ import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
 import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
+
 
 export default function Home() {
   const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
@@ -26,6 +28,7 @@ export default function Home() {
       </Head>
 
       <main>
+
         <CartContext.Provider value={state}>
           <CartDispatchContext.Provider value={dispatch}>
             <CartEngine />
@@ -33,6 +36,7 @@ export default function Home() {
             <ListaDeTarjetas />
           </CartDispatchContext.Provider>
         </CartContext.Provider>
+
       </main>
     </>
   );
