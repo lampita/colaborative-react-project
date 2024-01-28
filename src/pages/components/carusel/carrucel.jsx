@@ -2,18 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import style from "@/styles/carusel.module.css"; 
-import imagen1 from 'carusel/imagen1.webp'
-import imagen2 from 'carusel/imagen2.avif'
-import imagen3 from 'carusel/imagen3.webp'
-import imagen4 from 'carusel/imagen4.webp'
 
-const Carousel = () => {
+
+const Carrusel = () => {
   return (
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-80"
-          src={imagen1}
+          className="d-block w-100"
+          style={{ maxWidth: '100%', margin: '0 auto' }}
+          src="/carusel/imagen1.jpg"
           alt="lego2k"
         />
         <Carousel.Caption>
@@ -23,8 +21,9 @@ const Carousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-80"
-          src={imagen2}
+          className="d-block w-100"
+          style={{ maxWidth: '100%', margin: '0 auto' }}
+          src="/carusel/imagen2.jpg"
           alt="sbale"
         />
         <Carousel.Caption>
@@ -34,8 +33,9 @@ const Carousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-80"
-          src={imagen3}
+          className="d-block w-100"
+          style={{ maxWidth: '100%', margin: '0 auto' }}
+          src="/carusel/imagen3.jpg"
           alt="powerwash"
         />
         <Carousel.Caption>
@@ -45,8 +45,9 @@ const Carousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-80"
-          src={imagen4}
+          className="d-block w-100"
+          style={{ maxWidth: '100%', margin: '0 auto' }}
+          src="/carusel/imagen4.jpg"
           alt="psplus"
         />
         <Carousel.Caption>
@@ -60,4 +61,4 @@ Disfruta de cientos de títulos clásicos, de PS5 y PS4, el multijugador online 
   );
 };
 
-export default Carousel;
+export default Carrusel;
