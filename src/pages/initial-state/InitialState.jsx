@@ -1,19 +1,11 @@
-import { createContext, useState } from "react";
-
-
-export const GamesContext = createContext();
-
-const GamesContextProvider = ({ children }) => {
-  const [games, setGames] = useState([
+export const shoppingInitialState = {
+  products: [
     {
       id: "1",
       stars: "5",
       agotado: false,
-
-      image:
-       
-        <img src="XBOX-SERIES-5-2-220x275" alt="FC 24 PS4" />
-        ,
+  
+      image: "https://storegamesargentina.com/wp-content/uploads/2023/07/XBOX-SERIES-5-2-220x275.png",
       title: "EA SPORTS FC 24 PS4",
       price: "24490",
     },
@@ -44,7 +36,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Dead Island II PS4",
       price: "43.996",
     },
-
+  
     {
       id: "5",
       stars: "5",
@@ -54,7 +46,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Resident Evil 4 Remake PS4",
       price: "25490",
     },
-
+  
     {
       id: "6",
       stars: "5",
@@ -64,7 +56,7 @@ const GamesContextProvider = ({ children }) => {
       title: "WWE 2K23",
       price: "21264",
     },
-
+  
     {
       id: "7",
       stars: "5",
@@ -74,7 +66,7 @@ const GamesContextProvider = ({ children }) => {
       title: "God of War Ragnarok",
       price: "24490",
     },
-
+  
     {
       id: "8",
       stars: "5",
@@ -84,7 +76,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Fifa 23 Español Latino PS4",
       price: "21264",
     },
-
+  
     {
       id: "9",
       stars: "5",
@@ -94,7 +86,7 @@ const GamesContextProvider = ({ children }) => {
       title: "NBA 2K23",
       price: "20114",
     },
-
+  
     {
       id: "10",
       stars: "5",
@@ -104,7 +96,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Dead Island 2 PS4",
       price: "31614",
     },
-
+  
     {
       id: "11",
       stars: "5",
@@ -114,7 +106,7 @@ const GamesContextProvider = ({ children }) => {
       title: "A Way Out PS4",
       price: "25490",
     },
-
+  
     {
       id: "12",
       stars: "5",
@@ -124,7 +116,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Ace Combat 7: Skies Unknown",
       price: "15514",
     },
-
+  
     {
       id: "13",
       stars: "5",
@@ -134,7 +126,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Airport Simulator : Day & Night",
       price: "9660",
     },
-
+  
     {
       id: "14",
       stars: "5",
@@ -144,7 +136,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Alan Wake: Remastered",
       price: "12650",
     },
-
+  
     {
       id: "15",
       stars: "5",
@@ -154,7 +146,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Alien: Isolation ",
       price: "12064",
     },
-
+  
     {
       id: "16",
       stars: "5",
@@ -164,7 +156,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Anthem",
       price: "17584",
     },
-
+  
     {
       id: "17",
       stars: "5",
@@ -174,7 +166,7 @@ const GamesContextProvider = ({ children }) => {
       title: "AO International Tennis",
       price: "16664",
     },
-
+  
     {
       id: "18",
       stars: "5",
@@ -184,7 +176,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Ark Survival Evolved",
       price: "14470",
     },
-
+  
     {
       id: "19",
       stars: "5",
@@ -194,7 +186,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Armored Core VI Fires of Rubicon PS4",
       price: "41964",
     },
-
+  
     {
       id: "20",
       stars: "5",
@@ -204,7 +196,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Assetto Corsa",
       price: "9764",
     },
-
+  
     {
       id: "21",
       stars: "5",
@@ -214,7 +206,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Battlefield 2042",
       price: "11144",
     },
-
+  
     {
       id: "22",
       stars: "5",
@@ -224,7 +216,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Battlefield 1",
       price: "9764",
     },
-
+  
     {
       id: "23",
       stars: "5",
@@ -234,7 +226,7 @@ const GamesContextProvider = ({ children }) => {
       title: "Battlefield 4",
       price: "17814",
     },
-
+  
     {
       id: "24",
       stars: "5",
@@ -244,11 +236,6 @@ const GamesContextProvider = ({ children }) => {
       title: "Battlefield Hardline",
       price: "6314",
     },
-  ]);
-
-  return (
-    <GamesContext.Provider value={games}>{children}</GamesContext.Provider>
-  );
+  ],
+  cart: [],
 };
-
-export default GamesContextProvider;
