@@ -1,28 +1,36 @@
-const Tarjeta = (props) => {
+const Product = ({ product, addToCart }) => {
+  const { image, name, price, stars, agotado, id } = product;
+
   return (
     <>
       <figure>
         <a href="#">
-          <img src={props.game.image} alt={props.game.title} />
+          <img src={image} alt={name} />
         </a>
         <figcaption>
           <h3>JUEGO DIGITAL PS4</h3>
 
-          <h2>{props.game.title}</h2>
+          <h2>{name}</h2>
 
           <div>
-            <h4>${props.game.price} </h4>
+            <h4>${price} </h4>
           </div>
         </figcaption>
+        <button onClick={() => addToCart(id)}>Agregar</button>
       </figure>
 
       <style jsx>{`
+        h3 {
+          font-size: 0.8rem;
+          display: inline;
+        }
+
         h2 {
-          font-size: 1.1rem;
+          font-size: 0.7rem;
         }
 
         h4 {
-          font-size: 1.1rem;
+          font-size: 0.7rem;
           display: inline;
         }
 
@@ -61,4 +69,4 @@ const Tarjeta = (props) => {
   );
 };
 
-export default Tarjeta;
+export default Product;

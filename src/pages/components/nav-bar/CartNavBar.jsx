@@ -12,19 +12,28 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Toast from "react-bootstrap/Toast";
 import { ToastContainer } from "react-bootstrap";
 import { useState } from "react";
+import ModalCompras from "./ModalCompras";
 
 function CartNavBar(props) {
   const [verToast, setVerToast] = useState(false);
+  const [verModal, setVerModal] = useState(false);
+  function toggleVerModal() {
+    setVerModal(false);
+  }
+
   function toggleVerToast() {
     if (props.num < 1 || false) {
       setVerToast(!verToast);
     } else {
-      alert("Aca viene el Modal con los productos del carrito!");
+      setVerModal(true);
     }
   }
 
+
   return (
     <>
+      <ModalCompras props={verModal} />
+
       <Navbar expand="sm" sticky="top" style={{ padding: "0rem" }}>
         <Container fluid className={styles.container}>
           <Image
@@ -54,9 +63,10 @@ function CartNavBar(props) {
               </InputGroup>
 
               <Button
-                style={{ backgroundColor: "black", border: "black",}}
+                style={{ backgroundColor: "black", border: "black" }}
                 type="button"
                 onClick={toggleVerToast}
+                onMouseUp={toggleVerModal}
               >
                 <Image
                   className="cart_img"

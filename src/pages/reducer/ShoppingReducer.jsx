@@ -1,6 +1,9 @@
 import { TYPES } from "../actions/actions";
 import { shoppingInitialState } from "../initial-state/InitialState";
-export const shoppingReducer = (state, action) => {
+
+
+
+export const ShoppingReducer = (state, action) => {
   switch (action.type) {
     case TYPES.ADD_TO_CART: {
       let newItem = state.products.find(
@@ -8,6 +11,8 @@ export const shoppingReducer = (state, action) => {
       );
 
       let itemInCart = state.cart.find(item => item.id === newItem.id);
+
+      
 
       return itemInCart
         ? {
@@ -18,7 +23,8 @@ export const shoppingReducer = (state, action) => {
                 : item
             ),
           }
-        : { ...state, cart: [...state.cart, { ...newItem, quantity: 1 }] };
+        : { ...state, cart: [...state.cart, { ...newItem, quantity: 1 }] }; 
+        
     }
 
     case TYPES.REMOVE_ONE_PRODUCT: {
