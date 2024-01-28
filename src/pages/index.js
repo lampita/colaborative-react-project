@@ -4,6 +4,8 @@ const inter = Inter({ subsets: ["latin"] });
 import CartNavBar from "./components/nav-bar/cart_nav_bar";
 import Seccion from "./components/cards/Seccion";
 import GamesContextProvider from "./context/GamesContextProvider";
+import Footer from "./components/footer/footer";
+
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
         <GamesContextProvider>
           <CartNavBar num={1} />
           <Seccion />
+          <Footer />
         </GamesContextProvider>
       </main>
+    
     </>
   );
 }
