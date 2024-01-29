@@ -1,9 +1,8 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
-import './styles.css'; 
 
-const Carousel = () => {
+// import './styles.css'; 
+
+const Carusel = () => {
   return (
     <Carousel>
       <Carousel.Item>
@@ -56,4 +55,4 @@ Disfruta de cientos de títulos clásicos, de PS5 y PS4, el multijugador online 
   );
 };
 
-export default Carousel;
+export default Carusel;
