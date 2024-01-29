@@ -1,6 +1,11 @@
-.Carousel-Caption {
-  background: rgba(0, 0, 0, 0.5); 
-  color: black; /* Cambiado a negro */
-  padding: 20px; 
-  text-decoration: none; /* o puedes omitir esta línea si no deseas ninguna decoración */
+
+.carouselCaption {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
