@@ -17,7 +17,6 @@ const Seccion = () => {
 
     .cat {
       color: white;
-      font-family: 'Roboto';
       display: flex;
       justify-content: center;
             }
