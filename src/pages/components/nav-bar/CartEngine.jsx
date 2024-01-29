@@ -4,6 +4,9 @@ import { TYPES } from "@/pages/actions/actions";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer";
 import CartItem from "./CartItem";
 import Product from "@/pages/components/cards/Productos"
+import { CartContext, CartDispatchContext } from "@/pages/context/ShoppingContext";
+
+
 
 
 

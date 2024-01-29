@@ -15,6 +15,7 @@ import ModalCompras from "./ModalCompras";
 
 
 
+
 function CartNavBar() {
   const [verModal, setVerModal] = useState(false);
   const contenido = useContext(CartContext);
@@ -24,18 +25,10 @@ function CartNavBar() {
     0
   );
 
-  function resetVerModal() {
-    setVerModal(false);
-  }
-  function toggleVerModal() {
-    setVerModal(true);
-  }
-
-
-
-
-  return (
+ return (
     <>
+
+
       <ModalCompras props={verModal} />
 
       <Navbar expand="sm" sticky="top" style={{ padding: "0rem" }}>
@@ -69,10 +62,13 @@ function CartNavBar() {
               <Button
                 style={{ backgroundColor: "black", border: "black" }}
                 type="button"
+                onClick={() => {
+                  setVerModal(true);}}
+                onMouseUp={() => {
+                    setVerModal(false);}}
 
-                onClick={toggleVerModal}
-                onMouseUp={resetVerModal}
-
+                
+                
               >
                 <Image
                   className="cart_img"
