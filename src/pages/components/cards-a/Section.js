@@ -14,8 +14,8 @@ const Section = () => {
             {`
             section {
                 text-align: center;
-                padding: 40px 0;
-                margin: 60px;
+                padding: 50px 0;
+                margin: 40px;
                 }
             `}
             </style>

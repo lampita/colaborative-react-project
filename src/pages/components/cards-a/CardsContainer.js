@@ -90,8 +90,38 @@ const tarjetas = [
     },
     {
     id:18,
-    img: "img-cards-a/ASSASSINS-CREED-VALHALLA.jpg",
+    img: "img-cards-a/ASSASINS-CREED-VALHALLA.jpg",
     title: "Assassins Creed Valhalla",
+    },
+    {
+    id:19,
+    img: "img-cards-a/ASSASSING-MIRAGE.jpg",
+    title: " Assassing Mirage",
+    },
+    {
+    id:20,
+    img: "img-cards-a/ASSASSING-ORIGIN.jpg",
+    title: "Assassing Origin",    
+    },
+    {
+    id:21,
+    img: "img-cards-a/ASSASSING-UNITY.jpg",
+    title: "Assassins Creed Rival Games",
+    },
+    {
+    id:22,
+    img: "img-cards-a/BACK-4-BLOOD-1-321x400.jpg",
+    title: "Back 4 blood",
+    },
+    {
+    id:23,
+    img: "img-cards-a/BATMAN-ARKHAM-COLLECTION.jpg",
+    title: "Batman Arkham Collection",
+    },
+    {
+    id:24,
+    img: "img-cards-a/BATMAN-ARKHAM-NIGHT.jpg",
+    title: "Batman Arkham Night",
     },
 ];
 
