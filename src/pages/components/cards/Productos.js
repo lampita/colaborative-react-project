@@ -16,7 +16,7 @@ const Product = ({ product, addToCart }) => {
           <h2>{name}</h2>
 
           <div>
-            <h4>${price} </h4>
+            <h4>${price} </h4>nav
           </div>
         </figcaption>
         <button onClick={() => {addToCart(id)}} >Agregar</button>
