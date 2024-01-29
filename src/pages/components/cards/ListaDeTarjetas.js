@@ -28,12 +28,14 @@ const ListaDeTarjetas = () => {
         .container {
           width: 100%;
           heigth: 100%;
+          background-color: black;
         }
         .cards-list {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
+          
         }
       `}</style>
     </>
