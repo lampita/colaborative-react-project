@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button , Rating} from "@mui/material";
 import { useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -40,6 +40,8 @@ const Product = ({ product, addToCart }) => {
             </Tooltip>
           </div>
           <div className="pie">
+            <Rating value ={stars} readOnly />
+
             <Button
               variant="contained"
               style={{
