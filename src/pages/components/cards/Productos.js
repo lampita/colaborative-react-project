@@ -1,4 +1,3 @@
-
 import { Button } from "@mui/material";
 import { useState } from "react";
 import Dialog from "@mui/material/Dialog";
@@ -6,7 +5,6 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import Slide from "@mui/material/Slide";
-
 
 const Product = ({ product, addToCart }) => {
   const { image, title, price, stars, agotado, id } = product;
@@ -20,26 +18,24 @@ const Product = ({ product, addToCart }) => {
     setOpen(false);
   };
 
-
   return (
     <>
       <figure>
-        <a href="#">
+        <div>
           <img src={image} alt={title} />
-        </a>
+        </div>
         <figcaption>
-          <h3>JUEGO DIGITAL PS4</h3>
-
-          <h2>{title}</h2>
-
-          <div>
-            <h4>${price} </h4>nav
+          <div className="encabezado">JUEGO DIGITAL PS4</div>
+          <div className="cuerpo">
+            <div>{title}</div>
+            <div>$ {price}</div>
+          </div>
+          <div className="pie">
+            <Button variant="contained" size="small" onClick={handleOpenDialog}>
+              Agregar
+            </Button>
           </div>
         </figcaption>
-
-        
-        <Button variant="contained" size="small" onClick={handleOpenDialog}>Agregar</Button>
-
       </figure>
 
       <Dialog
@@ -49,7 +45,7 @@ const Product = ({ product, addToCart }) => {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogContent >
+        <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
             Agregar al carrito <h6>{title}</h6>
           </DialogContentText>
@@ -68,29 +64,28 @@ const Product = ({ product, addToCart }) => {
       </Dialog>
 
       <style jsx>{`
-        h3 {
-          font-size: 0.8rem;
-          display: inline;
+        .encabezado {
+          font-size: 0.6rem;
           color: white;
           display: flex;
           justify-content: center;
-        }
-
-        h2 {
-          font-size: 0.7rem;
-        }
-
-        h4 {
-          font-size: 0.7rem;
-          display: flex;
-          justify-content: center;
-          color: white;
-        }
-
-        a {
-          text-decoration: none;
-          color: rgb(255, 255, 255);
           text-align: center;
+        }
+
+        .cuerpo {
+          font-size: 0.7rem;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        
+
+        .pie {
+          font-size: 0.7rem;
+          color: white;
+          display: flex;
+          justify-content: center;
         }
 
         figure {
@@ -99,10 +94,7 @@ const Product = ({ product, addToCart }) => {
           height: 350px;
           border: 1px solid white;
           border-radius: 5px;
-          aling-items: center;
           margin: 10px;
-          font-size: 0.7rem;
-        
         }
 
         img {
@@ -110,17 +102,11 @@ const Product = ({ product, addToCart }) => {
         }
 
         figcaption {
-          padding: 1rem;
-          padding-top: 0;
-          margin: 0 auto;
+          padding: 0.6rem;
           display: flex;
           flex-direction: column;
-          aling-items: center;
-          gap: 10px;
-
+          gap: 5px;
         }
-
-
       `}</style>
     </>
   );
