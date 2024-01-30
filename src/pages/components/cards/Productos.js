@@ -40,6 +40,7 @@ const Product = ({ product, addToCart }) => {
             </Tooltip>
           </div>
           <div className="pie">
+
             <Rating value ={stars} readOnly />
 
             <Button
