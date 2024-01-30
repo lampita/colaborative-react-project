@@ -9,11 +9,13 @@ import {
 import CartNavBar from "./components/nav-bar/CartNavBar.jsx";
 import CartEngine from "@/pages/components/nav-bar/CartEngine.jsx";
 import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
+import Carrusel from "./components/carusel/carrucel.jsx";
 
 import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
 import Carrusel from "./components/carusel/carrucel.jsx";
+
 
 
 export default function Home() {

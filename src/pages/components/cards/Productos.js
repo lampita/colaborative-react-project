@@ -26,6 +26,9 @@ const Product = ({ product, addToCart }) => {
         h3 {
           font-size: 0.8rem;
           display: inline;
+          color: white;
+          display: flex;
+          justify-content: center;
         }
 
         h2 {
@@ -34,7 +37,9 @@ const Product = ({ product, addToCart }) => {
 
         h4 {
           font-size: 0.7rem;
-          display: inline;
+          display: flex;
+          justify-content: center;
+          color: white;
         }
 
         a {
@@ -46,11 +51,13 @@ const Product = ({ product, addToCart }) => {
         figure {
           background-color: transparent;
           width: 180px;
-          height: 380px;
-          border: 1px rgb(238, 238, 238);
+          height: 350px;
+          border: 1px solid white;
+          border-radius: 5px;
           aling-items: center;
           margin: 10px;
           font-size: 0.7rem;
+        
         }
 
         img {
@@ -58,7 +65,6 @@ const Product = ({ product, addToCart }) => {
         }
 
         figcaption {
-          font-family: "Roboto";
           padding: 1rem;
           padding-top: 0;
           margin: 0 auto;
@@ -66,7 +72,10 @@ const Product = ({ product, addToCart }) => {
           flex-direction: column;
           aling-items: center;
           gap: 10px;
+
         }
+
+
       `}</style>
     </>
   );
