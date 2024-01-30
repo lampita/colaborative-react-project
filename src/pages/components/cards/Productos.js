@@ -28,12 +28,16 @@ const Product = ({ product, addToCart }) => {
         <figcaption>
           <div className="encabezado">JUEGO DIGITAL PS4</div>
           <div className="cuerpo">
-            <div>
-              <Tooltip title={title} placement="top">
-                {title.length > 20 ? title.slice(0, 22 - 1) + " \u2026" : title}
-              </Tooltip>
-            </div>
-            <div>$ {price}</div>
+            <Tooltip title={title} placement="top" arrow>
+              <div>
+                {title.length > 20 ? (
+                  <span> {title.slice(0, 22 - 1) + " \u2026"}</span>
+                ) : (
+                  <span>{title}</span>
+                )}
+                <div>$ {price}</div>
+              </div>
+            </Tooltip>
           </div>
           <div className="pie">
             <Button
