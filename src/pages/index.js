@@ -13,7 +13,7 @@ import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
 import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
-import Carusel from"@/pages/components/carusel/carrucel.jsx"
+import Carrusel from "./components/carusel/carrucel.jsx";
 
 
 export default function Home() {
@@ -34,12 +34,12 @@ export default function Home() {
           <CartDispatchContext.Provider value={dispatch}>
             <CartEngine />
             <CartNavBar />
-            
+            <Carrusel />
 
             <ListaDeTarjetas />
           </CartDispatchContext.Provider>
         </CartContext.Provider>
-        <Carusel />
+        
 
       </main>
     </>
