@@ -13,6 +13,7 @@ import { useState, useContext, useEffect } from "react";
 import { CartContext } from "@/pages/context/ShoppingContext.jsx";
 import ModalCompras from "./ModalCompras";
 
+
 function CartNavBar() {
   const [verModal, setVerModal] = useState(false);
   const contenido = useContext(CartContext);
@@ -22,17 +23,10 @@ function CartNavBar() {
     0
   );
 
-  function resetVerModal() {
-    setVerModal(false);
-  }
-  function toggleVerModal() {
-    setVerModal(true);
-  }
-
-
-
-  return (
+ return (
     <>
+
+
 
       <ModalCompras props={verModal} />
 
@@ -67,8 +61,12 @@ function CartNavBar() {
               <Button
                 style={{ backgroundColor: "black", border: "black" }}
                 type="button"
-                onClick={toggleVerModal}
-                onMouseUp={resetVerModal}
+
+                onClick={() => {
+                  setVerModal(true);}}
+                onMouseUp={() => {
+                    setVerModal(false);}}
+
               >
                 <Image
                   className="cart_img"
@@ -78,9 +76,12 @@ function CartNavBar() {
                 <Badge
                   pill
                   bg="danger"
+
+
                   style={{ display: "inline-block" }}
                 >
                   {totalQuantity}
+
                 </Badge>
               </Button>
             </Container>
