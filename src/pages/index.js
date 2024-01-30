@@ -7,6 +7,7 @@ import Card from './components/cards-a/Cards'
 import CardsContainer from './components/cards-a/CardsContainer'
 import Button from './components/cards-a/Button'
 import Cards from './components/cards-a/Cards'
+import { Rating as MUIRating } from '@mui/material'
 
 const inter = Inter({ subsets: ['latin'] })
 

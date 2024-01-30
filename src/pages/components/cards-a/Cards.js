@@ -1,11 +1,12 @@
 import Button from './Button'
+import { Rating as MUIRating, Rating } from '@mui/material';
 
 
 
 
 const Cards = ({tarjetasvarias}) => {
 
-    const {img, title, bgcolor} = tarjetasvarias;
+    const {img, title, bgcolor , Rating} = tarjetasvarias;
 
     return (
         <>
@@ -31,8 +32,10 @@ const Cards = ({tarjetasvarias}) => {
                     height: 250px;
                     object-fit: cover;
                 } 
+                
             `}
         </style>
+        
         </>
     )
 }
