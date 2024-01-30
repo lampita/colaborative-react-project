@@ -28,6 +28,9 @@ const ShoppingCart = () => {
     }
   };
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
+  
+
+
 
   return (
     <>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+
 import {
   CartContext,
   CartDispatchContext,
@@ -10,12 +11,19 @@ import CartEngine from "@/pages/components/nav-bar/CartEngine.jsx";
 import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
 
 
+
 import Footer from "./components/footer/footer";
+
+import Carrusel from "./components/carusel/carrucel.jsx";
+
 
 
 import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
+import Carrusel from "./components/carusel/carrucel.jsx";
+
+
 
 export default function Home() {
   const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
@@ -30,16 +38,19 @@ export default function Home() {
       </Head>
 
       <main>
+    
         <CartContext.Provider value={state}>
           <CartDispatchContext.Provider value={dispatch}>
             <CartEngine />
-            <CartNavBar num={1} />
+            <CartNavBar />
+            <Carrusel />
+
             <ListaDeTarjetas />
           </CartDispatchContext.Provider>
         </CartContext.Provider>
 
-
         <Footer />
+
 
       </main>
     </>

@@ -26,6 +26,7 @@ export const ShoppingReducer = (state, action) => {
 
         : { ...state, cart: [...state.cart, { ...newItem, quantity: 1 }] };
 
+
         
     }
 
@@ -61,4 +62,6 @@ export const ShoppingReducer = (state, action) => {
       return state;
   }
 
+
 };
+
