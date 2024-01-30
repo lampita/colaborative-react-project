@@ -5,6 +5,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import Slide from "@mui/material/Slide";
+import Tooltip from "@mui/material/Tooltip";
 
 const Product = ({ product, addToCart }) => {
   const { image, title, price, stars, agotado, id } = product;
@@ -27,11 +28,22 @@ const Product = ({ product, addToCart }) => {
         <figcaption>
           <div className="encabezado">JUEGO DIGITAL PS4</div>
           <div className="cuerpo">
-            <div>{title}</div>
+            <div>
+              <Tooltip title={title} placement="top">
+                {title.length > 20 ? title.slice(0, 22 - 1) + " \u2026" : title}
+              </Tooltip>
+            </div>
             <div>$ {price}</div>
           </div>
           <div className="pie">
-            <Button variant="contained" size="small" onClick={handleOpenDialog}>
+            <Button
+              variant="contained"
+              style={{
+                backgroundImage: "linear-gradient(to right, #0054a5, #1db6ef)",
+              }}
+              size="small"
+              onClick={handleOpenDialog}
+            >
               Agregar
             </Button>
           </div>
@@ -79,7 +91,6 @@ const Product = ({ product, addToCart }) => {
           flex-direction: column;
           text-align: center;
         }
-        
 
         .pie {
           font-size: 0.7rem;
@@ -105,6 +116,7 @@ const Product = ({ product, addToCart }) => {
           padding: 0.6rem;
           display: flex;
           flex-direction: column;
+          justify-content: flex-end;
           gap: 5px;
         }
       `}</style>
