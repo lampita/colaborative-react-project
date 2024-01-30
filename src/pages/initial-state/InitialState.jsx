@@ -2,7 +2,7 @@ export const shoppingInitialState = {
   products: [
     {
       id: "1",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/XBOX-SERIES-5-2-220x275.png",
       title: "EA SPORTS FC 24 PS4",
@@ -18,7 +18,7 @@ export const shoppingInitialState = {
     },
     {
       id: "3",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/CALL-OF-DUTY-MODERN-WARFARE-2-220x274.jpg",
       title: "CALL OF DUTY MODERN WARFARE II PS4",
@@ -26,7 +26,7 @@ export const shoppingInitialState = {
     },
     {
       id: "4",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image:"cards/img/dead-island.png",
       title: "Dead Island II PS4",
@@ -35,7 +35,7 @@ export const shoppingInitialState = {
 
     {
       id: "5",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/RESIDENT-EVIL-4-REMAKE-220x274.jpg",
       title: "Resident Evil 4 Remake PS4",
@@ -44,7 +44,7 @@ export const shoppingInitialState = {
 
     {
       id: "6",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/WWE-2K23-PS4-DIGITAL--220X274.jpg",
       title: "WWE 2K23",
@@ -53,7 +53,7 @@ export const shoppingInitialState = {
 
     {
       id: "7",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/GOD-OF-WAR-RAGNAROK-220x274.jpg",
       title: "God of War Ragnarok",
@@ -62,7 +62,7 @@ export const shoppingInitialState = {
 
     {
       id: "8",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/FIFA-23-220x274.jpg",
       title: "Fifa 23 Español Latino PS4",
@@ -80,7 +80,7 @@ export const shoppingInitialState = {
 
     {
       id: "10",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image:"cards/img/GTA-TRILOGY-DEFINITIVE-EDITION-220x274.jpg",
       title: "GTA Trilogi",
@@ -89,7 +89,7 @@ export const shoppingInitialState = {
 
     {
       id: "11",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/A-WAY-OUT-220x274.jpg",
       title: "A Way Out PS4",
@@ -107,7 +107,7 @@ export const shoppingInitialState = {
 
     {
       id: "13",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image:"cards/img/AIRPORT-SIMULATOR-DAY-NIGHT-1-220x275.jpg",
       title: "Airport Simulator : Day & Night",
@@ -116,7 +116,7 @@ export const shoppingInitialState = {
 
     {
       id: "14",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/ALAN-WAKE-REMASTERED-220X275.jpg",
       title: "Alan Wake: Remastered",
@@ -134,7 +134,7 @@ export const shoppingInitialState = {
 
     {
       id: "16",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/XBOX-SERIES-7-220x275.png",
       title: "Anthem",
@@ -143,7 +143,7 @@ export const shoppingInitialState = {
 
     {
       id: "17",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/AO-INTERNACIONAL-TENNIS-220x274.jpg",
       title: "AO International Tennis",
@@ -152,7 +152,7 @@ export const shoppingInitialState = {
 
     {
       id: "18",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/ARK-SURVIVAL-EVOLVED-220x274.jpg",
       title: "Ark Survival Evolved",
@@ -161,7 +161,7 @@ export const shoppingInitialState = {
 
     {
       id: "19",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/ARMORED-CORE-VI-220x274.jpg",
       title: "Armored Core VI Fires of Rubicon PS4",
@@ -170,7 +170,7 @@ export const shoppingInitialState = {
 
     {
       id: "20",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/ASSETTO-CORSA-220x274.jpg",
       title: "Assetto Corsa",
@@ -188,7 +188,7 @@ export const shoppingInitialState = {
 
     {
       id: "22",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/BATTLEFIELD-1-321x400.jpg",
       title: "Battlefield 1",
@@ -197,7 +197,7 @@ export const shoppingInitialState = {
 
     {
       id: "23",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/BATTLEFIELD-4-321x400.jpg",
       title: "Battlefield 4",
@@ -214,7 +214,7 @@ export const shoppingInitialState = {
     },
     {
       id: "25",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/ZOMBIE-ARMY-4.jpg",
       title: "Zombie Army 4: Dead War",
@@ -230,7 +230,7 @@ export const shoppingInitialState = {
     },
     {
       id: "27",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/VAMPYR-220x274.jpg",
       title: "Vampyr",
@@ -246,7 +246,7 @@ export const shoppingInitialState = {
     },
     {
       id: "29",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/UNCHARTED-4-BUNDLE-220x274.jpg",
       title: "Uncharted 4",
@@ -262,7 +262,7 @@ export const shoppingInitialState = {
     },
     {
       id: "31",
-      stars: "5",
+      stars: "2",
       agotado: false,
       image: "cards/img/TONY-HAWKS-12-220x274.jpg",
       title: "Tony Hawks Pro Skater 1 y 2",
@@ -270,7 +270,7 @@ export const shoppingInitialState = {
     },
     {
       id: "32",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/THE-DIVISION-2-PS4-220x274.jpg",
       title: "Tom Clancy´s The Division 2",
@@ -286,7 +286,7 @@ export const shoppingInitialState = {
     },
     {
       id: "34",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/RAINBOW-SIX-SIEGE-EXTRACTION-220x274.jpg",
       title: "Tom Clancy´s Rainbows Six: Extraction",
@@ -302,7 +302,7 @@ export const shoppingInitialState = {
     },
     {
       id: "36",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/THE-WITCHER-3-220x274.jpg",
       title: "The Witcher 3: Wild Hunt - Subtitulado",
@@ -318,7 +318,7 @@ export const shoppingInitialState = {
     },
     {
       id: "38",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/THE-LAST-OF-US-REMASTERED-1-220x274.jpg",
       title: "The Last of us Remastered",
@@ -334,7 +334,7 @@ export const shoppingInitialState = {
     },
     {
       id: "40",
-      stars: "5",
+      stars: "4",
       agotado: false,
       image: "cards/img/THE-HUNTER-WILD-220x274.jpg",
       title: "The Hunter: Call of the Wild",
@@ -350,7 +350,7 @@ export const shoppingInitialState = {
     },
     {
       id: "42",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/SPIDERMAN-GOTY-1-220x274.jpg",
       title: "Spider-Man: Game of The Year Español",
@@ -358,7 +358,7 @@ export const shoppingInitialState = {
     },
     {
       id: "43",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/SPIDERMAN-MILES-MORALES-1-220x274.jpg",
       title: "Spider-Man: Miles Morales",
@@ -374,7 +374,7 @@ export const shoppingInitialState = {
     },
     {
       id: "45",
-      stars: "5",
+      stars: "3",
       agotado: false,
       image: "cards/img/SONIC-ORIGINS-220x274.jpg",
       title: "Sonic Origins",
