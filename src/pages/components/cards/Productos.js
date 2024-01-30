@@ -1,26 +1,71 @@
 
+import { Button } from "@mui/material";
+import { useState } from "react";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import Slide from "@mui/material/Slide";
+
 
 const Product = ({ product, addToCart }) => {
-  const { image, name, price, stars, agotado, id } = product;
-  
+  const { image, title, price, stars, agotado, id } = product;
+
+  const handleOpenDialog = () => {
+    setOpen(true);
+  };
+
+  const [open, setOpen] = useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+
 
   return (
     <>
       <figure>
         <a href="#">
-          <img src={image} alt={name} />
+          <img src={image} alt={title} />
         </a>
         <figcaption>
           <h3>JUEGO DIGITAL PS4</h3>
 
-          <h2>{name}</h2>
+          <h2>{title}</h2>
 
           <div>
             <h4>${price} </h4>nav
           </div>
         </figcaption>
-        <button onClick={() => {addToCart(id)}} >Agregar</button>
+
+        
+        <Button variant="contained" size="small" onClick={handleOpenDialog}>Agregar</Button>
+
       </figure>
+
+      <Dialog
+        open={open}
+        TransitionComponent={Slide}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogContent >
+          <DialogContentText id="alert-dialog-slide-description">
+            Agregar al carrito <h6>{title}</h6>
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Descartar</Button>
+          <Button
+            onClick={() => {
+              addToCart(id);
+              handleClose();
+            }}
+          >
+            De Acuerdo
+          </Button>
+        </DialogActions>
+      </Dialog>
 
       <style jsx>{`
         h3 {

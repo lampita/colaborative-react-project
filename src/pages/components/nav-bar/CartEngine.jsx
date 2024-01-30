@@ -7,6 +7,9 @@ import Product from "@/pages/components/cards/Productos"
 import { CartContext, CartDispatchContext } from "@/pages/context/ShoppingContext";
 
 
+
+
+
 const ShoppingCart = () => {
 
   const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
