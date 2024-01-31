@@ -269,7 +269,7 @@ export const shoppingInitialState = {
       price: "16490",
     },
     {
-      id: "31",
+      id: "32",
       stars: "5",
       agotado: false,
       image: "cards/img/THE-DIVISION-2-PS4-220x274.jpg",
