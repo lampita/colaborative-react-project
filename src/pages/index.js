@@ -14,7 +14,7 @@ import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
 import Carrusel from "./components/carusel/carrucel.jsx";
-import Footer from "./components/footer/footer.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 
 
