@@ -63,7 +63,7 @@ const Product = ({ product, addToCart }) => {
       >
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-          <div>🛒 Agregar al carrito</div><div><strong>  {title.toUpperCase()}</strong> ?</div>
+          <div>Agregar al carrito</div><div><strong>  {title.toUpperCase()}</strong> ?</div>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
