@@ -3,11 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import styles from "@/styles/carusel.module.css";
 
-
-
 const Carrusel = () => {
   return (
-    <Carousel>
+    <Carousel indicators={false} controls={false}>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -57,7 +55,6 @@ const Carrusel = () => {
 Disfruta de cientos de títulos clásicos, de PS5 y PS4, el multijugador online y muchos más beneficios imperdibles.</p>
         </Carousel.Caption>
       </Carousel.Item>
-
     </Carousel>
   );
 };
