@@ -46,7 +46,7 @@ const CartItem = ({ item, deleteFromCart, handleClose, addToCart }) => {
               boxShadow: "14px 14px 20px 0 rgba(20, 20, 20, 0.3)",
             }}
           >
-            <Tooltip title="Agregar uno" placement="bottom">
+            <Tooltip title="Agregar uno" placement="top">
               <img
                 src="/nav-bar/playTriangulo.png"
                 style={{ width: "25%", margin: "0.5rem" }}
@@ -79,7 +79,7 @@ const CartItem = ({ item, deleteFromCart, handleClose, addToCart }) => {
               boxShadow: "14px 14px 20px 0 rgba(20, 20, 20, 0.3)",
             }}
           >
-                        <Tooltip title="Eliminar Todos" placement="top">
+                        <Tooltip title="Eliminar Todos" placement="bottom">
               <img
                 src="/nav-bar/playCuadrado.png"
                 style={{ width: "25%", margin: "0.5rem" }}
@@ -116,11 +116,11 @@ const CartItem = ({ item, deleteFromCart, handleClose, addToCart }) => {
               }).format(price)}
             </div>
             <div>
-              Cantidad=<>&nbsp;</> {quantity}
+               Cantidad=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{quantity}
             </div>
             <div>
               {" "}
-              Subtotal= <>&nbsp;&nbsp;&nbsp;</>{" "}
+              Subtotal= <>&nbsp;&nbsp;&nbsp;</>
               {Intl.NumberFormat("es-AR", {
                 style: "currency",
                 currency: "ARS",
