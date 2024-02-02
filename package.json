@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "maindb": "json-server --port 5000 --watch src/pages/db/InitialState.json"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
