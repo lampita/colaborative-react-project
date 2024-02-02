@@ -57,6 +57,7 @@ const handleClose = () => setShow(false);
           {cart.length >= 1 ? (
             cart.map((item, index) => (
               <Paper
+                key={index}
                 elevation={24}
                 style={{
                   margin: "0.5rem",
