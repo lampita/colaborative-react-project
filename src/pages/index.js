@@ -10,11 +10,13 @@ import CartNavBar from "./components/nav-bar/CartNavBar.jsx";
 import CartEngine from "@/pages/components/nav-bar/CartEngine.jsx";
 import ListaDeTarjetas from "./components/cards/ListaDeTarjetas";
 
+
 import { useReducer } from "react";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer.jsx";
 import { shoppingInitialState } from "./initial-state/InitialState.jsx";
 import Carrusel from "./components/carusel/carrucel.jsx";
-import Carusel_owl from "/src/pages/components/owl-carusel/Carusel-owl.jsx";
+
+import CaruselOwl from "./components/owl-carusel/CaruselOwl.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 
@@ -38,14 +40,11 @@ export default function Home() {
             <CartEngine />
             <CartNavBar />
             <Carrusel />
-
             <ListaDeTarjetas />
-
-            <Carusel_owl/>
           </CartDispatchContext.Provider>
         </CartContext.Provider>
 
-
+<CaruselOwl />
         <Footer />
 
 

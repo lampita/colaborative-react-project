@@ -1,18 +1,27 @@
 import { TYPES } from "../actions/actions";
 import { shoppingInitialState } from "../initial-state/InitialState";
 
-
-
 export const ShoppingReducer = (state, action) => {
   switch (action.type) {
+
+    
+    case TYPES.READ_STATE: {
+
+      return {
+        ...state,
+        products: action.payload.products,
+        cart: action.payload.cart,
+        
+      };
+    }
+
+
     case TYPES.ADD_TO_CART: {
       let newItem = state.products.find(
-        product => product.id === action.payload
+        (product) => product.id === action.payload
       );
 
-      let itemInCart = state.cart.find(item => item.id === newItem.id);
-
-      
+      let itemInCart = state.cart.find((item) => item.id === newItem.id);
 
       return itemInCart
         ? {
@@ -23,15 +32,11 @@ export const ShoppingReducer = (state, action) => {
                 : item
             ),
           }
-
         : { ...state, cart: [...state.cart, { ...newItem, quantity: 1 }] };
-
-
-        
     }
 
     case TYPES.REMOVE_ONE_PRODUCT: {
-      let itemToDelete = state.cart.find(item => item.id === action.payload);
+      let itemToDelete = state.cart.find((item) => item.id === action.payload);
 
       return itemToDelete.quantity > 1
         ? {
@@ -61,7 +66,4 @@ export const ShoppingReducer = (state, action) => {
     default:
       return state;
   }
-
-
 };
-

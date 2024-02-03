@@ -10,7 +10,7 @@ ul, li {list-style: none;}
     padding: 0;
   }
 
-  
+main{background-color: black;}  
 /* Estilos para el footer */
 footer {
   background-color: #333;
