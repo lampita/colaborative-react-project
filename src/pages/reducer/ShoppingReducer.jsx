@@ -1,6 +1,9 @@
 import { TYPES } from "../actions/actions";
 import { shoppingInitialState } from "../initial-state/InitialState";
 
+
+
+
 export const ShoppingReducer = (state, action) => {
   switch (action.type) {
 
@@ -13,6 +16,7 @@ export const ShoppingReducer = (state, action) => {
         cart: action.payload.cart,
         
       };
+      
     }
 
 
@@ -65,5 +69,7 @@ export const ShoppingReducer = (state, action) => {
 
     default:
       return state;
-  }
+    
+  } 
+  
 };

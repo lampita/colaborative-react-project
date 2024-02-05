@@ -9,7 +9,7 @@ const ListaDeTarjetas = () => {
   const dispatch = useContext(CartDispatchContext);
   const contenido = useContext(CartContext);
 
-  const updateState = async () => {
+    const updateState = async () => {
     const ENDPOINTS = {
       products: "http://localhost:5000/products",
       cart: "http://localhost:5000/cart",
@@ -19,15 +19,16 @@ const ListaDeTarjetas = () => {
     
     const productList = await responseProducts.data;
     
-    const cartItems = await responseCart.data;
-    dispatch({type: TYPES.READ_STATE, payload: {products: productList, cart: cartItems}});
+    const cartItems =  await responseCart.data;
+    dispatch({type: TYPES.READ_STATE, payload: {products: productList, cart:  cartItems}});
+    
   };
 
      
  useEffect(() => {updateState()}, [])
   
 
-
+ 
 
 
 
@@ -37,7 +38,7 @@ const ListaDeTarjetas = () => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
-
+console.log(products)
 
   return (
     <>
