@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main>
-    
+
         <CartContext.Provider value={state}>
           <CartDispatchContext.Provider value={dispatch}>
             <CartEngine />
@@ -44,7 +44,7 @@ export default function Home() {
           </CartDispatchContext.Provider>
         </CartContext.Provider>
 
-<CaruselOwl />
+        <CaruselOwl />
         <Footer />
 
 
