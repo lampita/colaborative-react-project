@@ -5,7 +5,7 @@ import styles from "@/styles/carusel.module.css";
 
 const Carrusel = () => {
   return (
-    <Carousel controls={false} indicators={false}>
+    <Carouselgit>
       <Carousel.Item>
         <img
           className="d-block w-100"
