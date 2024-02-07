@@ -1,23 +1,24 @@
-import { useReducer, useEffect } from "react";
+import axios from "axios";
+import { useReducer  } from "react";
 import { shoppingInitialState } from "@/pages/initial-state/InitialState";
 import { TYPES } from "@/pages/actions/actions";
 import { ShoppingReducer } from "@/pages/reducer/ShoppingReducer";
-import CartItem from "./CartItem";
-import Product from "@/pages/components/cards/Productos"
-import { CartContext, CartDispatchContext } from "@/pages/context/ShoppingContext";
-
-
-
+import {
+  CartContext,
+  CartDispatchContext,
+} from "@/pages/context/ShoppingContext";
 
 
 const ShoppingCart = () => {
+  
 
   const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
   const { products, cart } = state;
+ 
+
 
   const addToCart = (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-
   };
 
   const deleteFromCart = (id, all) => {
@@ -28,17 +29,14 @@ const ShoppingCart = () => {
     }
   };
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
-  
-
-
 
   return (
     <>
-    <CartContext.Provider value={state}>
-      <CartDispatchContext.Provider value={dispatch}>
-
-      </CartDispatchContext.Provider>
-    </CartContext.Provider>
+      <CartContext.Provider value={state}>
+        <CartDispatchContext.Provider
+          value={dispatch}
+        ></CartDispatchContext.Provider>
+      </CartContext.Provider>
     </>
   );
 };

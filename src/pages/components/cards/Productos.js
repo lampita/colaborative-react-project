@@ -28,12 +28,16 @@ const Product = ({ product, addToCart }) => {
         <figcaption>
           <div className="encabezado">JUEGO DIGITAL PS4</div>
           <div className="cuerpo">
-            <div>
-              <Tooltip title={title} placement="top">
-                {title.length > 20 ? title.slice(0, 22 - 1) + " \u2026" : title}
-              </Tooltip>
-            </div>
-            <div>$ {price}</div>
+            <Tooltip title={title.toUpperCase()} placement="top" arrow>
+              <div>
+                {title.length > 20 ? (
+                  <span><strong> {title.slice(0, 22 - 1).toUpperCase() + " \u2026"}</strong></span>
+                ) : (
+                  <span><strong>{title.toUpperCase()}</strong></span>
+                )}
+                <div>{Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 }).format(price)}</div>
+              </div>
+            </Tooltip>
           </div>
           <div className="pie">
             <Button
@@ -59,7 +63,7 @@ const Product = ({ product, addToCart }) => {
       >
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            Agregar al carrito <h6>{title}</h6>
+          <div>Agregar al carrito</div><div><strong>  {title.toUpperCase()}</strong> ?</div>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
