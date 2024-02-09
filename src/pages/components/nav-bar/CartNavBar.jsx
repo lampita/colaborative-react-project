@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "@/styles/Cart-nav-bar.module.css";
+import styles from "@/styles/CartNavBar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -9,39 +9,36 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
 import Dropdown from "react-bootstrap/Dropdown";
-import { useState, useContext, useEffect } from "react";
-import { CartContext } from "@/pages/context/ShoppingContext.jsx";
+import { useState, useContext } from "react";
+import { ProductsContext } from "@/pages/components/Reducer+Context/Reducer+Context";
 import ModalCompras from "./ModalCompras";
-
 
 function CartNavBar() {
   const [verModal, setVerModal] = useState(false);
-  const contenido = useContext(CartContext);
-  const { cart } = contenido;
+
+  const [state, dispatch] = useContext(ProductsContext);
+
+  const { cart, products } = state;
+
   const totalQuantity = cart.reduce(
     (qty, product) => qty + product.quantity,
     0
   );
 
- return (
+  return (
     <>
-
-
-
       <ModalCompras props={verModal} />
 
-      <Navbar expand="sm" sticky="top" style={{ padding: "0rem" }}>
+      <Navbar id="inicio" expand="sm" sticky="top" style={{ padding: "0rem" }}>
         <Container fluid className={styles.container}>
           <Image
             roundedCircle
-            src="nav-bar/logo.jpg"
+            src="assets/logo.png"
             alt="icono comercial"
             className={styles.img_display}
           />
 
-          <Navbar.Brand className={styles.brand} href="#home">
-            Maluma-Store
-          </Navbar.Brand>
+          <div className={styles.brand}>Maluma-Store</div>
 
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -61,34 +58,26 @@ function CartNavBar() {
               <Button
                 style={{ backgroundColor: "black", border: "black" }}
                 type="button"
-
                 onClick={() => {
-                  setVerModal(true);}}
+                  setVerModal(true);
+                }}
                 onMouseUp={() => {
-                    setVerModal(false);}}
-
+                  setVerModal(false);
+                }}
               >
                 <Image
                   className="cart_img"
                   src="/nav-bar/icono_carrito.svg"
                   alt="icono de un carrito"
                 />
-                <Badge
-                  pill
-                  bg="danger"
-
-
-                  style={{ display: "inline-block" }}
-                >
+                <Badge pill bg="danger" style={{ display: "inline-block" }}>
                   {totalQuantity}
-
                 </Badge>
               </Button>
             </Container>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       <Navbar expand="sm" style={{ padding: "0rem" }}>
         <Container
           className={styles.container_2}

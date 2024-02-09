@@ -1,44 +1,39 @@
-import { TYPES } from "@/pages/actions/actions";
 import Product from "./Productos";
-import { CartContext, CartDispatchContext } from "@/pages/context/ShoppingContext";
 import { useContext, useEffect } from "react";
+import { ProductsContext } from "@/pages/components/Reducer+Context/Reducer+Context";
 import axios from "axios";
 
-const ListaDeTarjetas = () => {
-  
-  const dispatch = useContext(CartDispatchContext);
-  const contenido = useContext(CartContext);
 
-    const updateState = async () => {
+
+
+const ListaDeTarjetas = () => {
+  const [state, dispatch] = useContext(ProductsContext);
+  const { products, cart } = state;
+
+  const updateState = async () => {
     const ENDPOINTS = {
       products: "http://localhost:5000/products",
       cart: "http://localhost:5000/cart",
     };
     const responseProducts = await axios.get(ENDPOINTS.products);
     const responseCart = await axios.get(ENDPOINTS.cart);
-    
+
     const productList = await responseProducts.data;
-    
-    const cartItems =  await responseCart.data;
-    dispatch({type: TYPES.READ_STATE, payload: {products: productList, cart:  cartItems}});
-    
+
+    const cartItems = await responseCart.data;
+    dispatch({
+      type: "READ_STATE",
+      payload: { products: productList, cart: cartItems },
+    });
   };
 
-     
- useEffect(() => {updateState()}, [])
-  
+  useEffect(() => {
+    updateState();
+  }, []);
 
- 
-
-
-
-  
-  const { products, cart } = contenido;
   const addToCart = (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+    dispatch({ type: "ADD_TO_CART", payload: id });
   };
-
-console.log(products)
 
   return (
     <>
@@ -64,7 +59,6 @@ console.log(products)
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
-          
         }
       `}</style>
     </>
