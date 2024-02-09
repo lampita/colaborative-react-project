@@ -1,0 +1,23 @@
+.images{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 0.6rem;
+    border-radius: 1rem;
+}
+.cardItem{
+ 
+    background-color: #ac9fee;
+    margin-right: 1rem;
+}
+.swiper_container{
+    height: 100%;
+    width: 98%;
+    padding: 0.1rem;
+    margin-top: 3rem;
+    margin-left: 0.8rem;
+    margin-right: 1.2rem;
+    margin-bottom: 3rem;
+    display: flex;
+   
+}
