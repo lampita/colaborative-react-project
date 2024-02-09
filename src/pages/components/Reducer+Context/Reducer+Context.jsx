@@ -1,24 +1,20 @@
-import { TYPES } from "../actions/actions";
-import { shoppingInitialState } from "../initial-state/InitialState";
+//import { shoppingInitialState } from "../../initial-state/InitialState";
+import React, { useReducer, createContext, useEffect } from "react";
+import { TYPES } from "../../actions/actions";
 
 
+export const ProductsContext = createContext();
+const shoppingInitialState = { products: [], cart: [] };
 
-
-export const ShoppingReducer = (state, action) => {
+const ShoppingReducer = (state, action) => {
   switch (action.type) {
-
-    
     case TYPES.READ_STATE: {
-
       return {
         ...state,
         products: action.payload.products,
         cart: action.payload.cart,
-        
       };
-      
     }
-
 
     case TYPES.ADD_TO_CART: {
       let newItem = state.products.find(
@@ -64,12 +60,23 @@ export const ShoppingReducer = (state, action) => {
       };
     }
     case TYPES.CLEAR_CART: {
-      return shoppingInitialState;
+      return {...state, cart:[]}
     }
 
     default:
       return state;
-    
-  } 
+  }
+};
+
+export const ProductsContextProvider = ({ children }) => {
   
+  
+
+  const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
+
+  return (
+    <ProductsContext.Provider value={[state, dispatch]}>
+      {children}
+    </ProductsContext.Provider>
+  );
 };

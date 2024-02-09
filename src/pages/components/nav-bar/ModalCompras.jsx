@@ -1,39 +1,33 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect, useContext } from "react";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
-import {
-  CartContext,
-  CartDispatchContext,
-} from "@/pages/context/ShoppingContext.jsx";
 import CartItem from "./CartItem";
-import { TYPES } from "@/pages/actions/actions";
 import Paper from "@mui/material/Paper";
+import { ProductsContext } from "@/pages/components/Reducer+Context/Reducer+Context";
 
 function ModalCompras(props) {
   const [show, setShow] = useState(false);
-const handleClose = () => setShow(false);
+  const handleClose = () => setShow(false);
   useEffect(() => {
     setShow(props.props);
   }, [props.props]);
 
-  const dispatch = useContext(CartDispatchContext);
+  const [state, dispatch] = useContext(ProductsContext);
+  const { products, cart } = state;
 
   const deleteFromCart = (id, all) => {
     if (all) {
-      dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id });
+      dispatch({ type: "REMOVE_ALL_PRODUCTS", payload: id });
     } else {
-      dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
+      dispatch({ type: "REMOVE_ONE_PRODUCT", payload: id });
     }
   };
-  const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
-  const contenido = useContext(CartContext);
-  const { products, cart } = contenido;
-  const addToCart = (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  };
-  
+  const clearCart = () => dispatch({ type: "CLEAR_CART" });
 
+  const addToCart = (id) => {
+    dispatch({ type: "ADD_TO_CART", payload: id });
+  };
 
 
 
@@ -62,20 +56,15 @@ const handleClose = () => setShow(false);
                 style={{
                   margin: "0.5rem",
                   padding: "0.8rem",
-                  
                 }}
               >
-                
-                  <CartItem  
-                    key={index}
-                    item={item}
-                    deleteFromCart={deleteFromCart}
-                    handleClose={handleClose}
-                    addToCart={addToCart}
-
-                  />
-           
-
+                <CartItem
+                  key={index}
+                  item={item}
+                  deleteFromCart={deleteFromCart}
+                  handleClose={handleClose}
+                  addToCart={addToCart}
+                />
               </Paper>
             ))
           ) : (

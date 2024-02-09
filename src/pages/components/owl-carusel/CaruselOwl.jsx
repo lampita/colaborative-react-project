@@ -61,4 +61,4 @@ const CaruselOwl = () => {
   )
 }
 
-export default CaruselOwl
+export default CaruselOwl;

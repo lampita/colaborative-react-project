@@ -22,6 +22,7 @@ const Product = ({ product, addToCart }) => {
   return (
     <>
       <figure>
+        
         <div>
           <img src={image} alt={title} />
         </div>
@@ -63,7 +64,7 @@ const Product = ({ product, addToCart }) => {
       >
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-          <div>Agregar al carrito</div><div><strong>  {title.toUpperCase()}</strong> ?</div>
+          <div>Agregar al carrito</div><div className="msg">{title.toUpperCase()} ?</div>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -102,6 +103,7 @@ const Product = ({ product, addToCart }) => {
           display: flex;
           justify-content: center;
         }
+        .msg{font-weight: bold}
 
         figure {
           background-color: transparent;

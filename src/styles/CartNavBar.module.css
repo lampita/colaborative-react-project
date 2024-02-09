@@ -4,8 +4,12 @@
 @media screen and (max-width: 576px) {
   .img_display {
     display: none;
+
   }
 }
+
+
+
 .img_display {
   width: 9.375rem;
 }
@@ -13,10 +17,14 @@
 .container {
   color: white;
   background-color: black;
+  font-size: 1.4rem;
 }
 
 .brand:hover {
-  color: #fff;
+  
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0.8rem 1rem 2.5rem 0.5rem rgb(24, 71, 89);
+  transition: all 0.2s ease;
 }
 
 .container_1 {
