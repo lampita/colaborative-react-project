@@ -1,33 +1,17 @@
 //import { shoppingInitialState } from "../../initial-state/InitialState";
-import React, { useReducer, createContext, useState, useEffect } from "react";
+import React, { useReducer, createContext, useEffect } from "react";
 import { TYPES } from "../../actions/actions";
 import axios from "axios";
 
 export const ProductsContext = createContext();
-const shoppingInitialState = { products: [], cart: [], filtro:[] };
+const shoppingInitialState = { products: [], cart: [], filtro: [] };
 
 const ENDPOINTS = {
   products: "http://localhost:5000/products",
   cart: "http://localhost:5000/cart",
 };
 
-const ShoppingReducer =  (state, action) => {
-
-// const prueba=axios.get(ENDPOINTS.products).then((response) => {(response.data)});
-// console.log(prueba)
-
-// const getProducts = async () => {
-//   const response = await axios.get(ENDPOINTS.products);
-//   const productaso = await response.data;
-
-//     return productaso;
-// };
-
-// Obtener los productos y usarlos en otra parte del código
-// const prueba = getProducts();
-// console.log(prueba)
-
- 
+const ShoppingReducer = (state, action) => {
   switch (action.type) {
     case TYPES.READ_STATE: {
       return {
@@ -38,8 +22,7 @@ const ShoppingReducer =  (state, action) => {
     }
 
     case TYPES.OPCION_DE_MAPEO: {
-      
-      const copyDeState=[...state.products]
+      const copyDeState = [...state.products];
 
       const filteredProducts = copyDeState.filter(
         (product) => product.status === action.payload
@@ -120,7 +103,7 @@ export const ProductsContextProvider = ({ children }) => {
     updateState();
   }, []);
 
- const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
+  const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
 
   return (
     <ProductsContext.Provider value={[state, dispatch]}>

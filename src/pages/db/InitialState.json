@@ -15,7 +15,8 @@
       "agotado": false,
       "image": "cards/img/NBA2K24.png",
       "title": "NBA 2K24 PS4",
-      "price": "38514"
+      "price": "38514",
+      "status": "preventa"
     },
     {
       "id": "3",
@@ -52,7 +53,8 @@
       "agotado": false,
       "image": "cards/img/WWE-2K23-PS4-DIGITAL--220X274.jpg",
       "title": "WWE 2K23",
-      "price": "21264"
+      "price": "21264",
+      "status": "masVendido"
     },
 
     {
@@ -81,7 +83,8 @@
       "agotado": false,
       "image": "cards/img/NBA-2K23-220x274.jpg",
       "title": "NBA 2K23",
-      "price": "20114"
+      "price": "20114",
+      "status": "ofertas"
     },
 
     {
@@ -100,7 +103,8 @@
       "agotado": false,
       "image": "cards/img/A-WAY-OUT-220x274.jpg",
       "title": "A Way Out PS4",
-      "price": "25490"
+      "price": "25490",
+      "status": "ofertas"
     },
 
     {
@@ -139,7 +143,8 @@
       "agotado": false,
       "image": "cards/img/XBOX-SERIES-6-220x275.png",
       "title": "Alien: Isolation ",
-      "price": "12064"
+      "price": "12064",
+      "status": "preventa"
     },
 
     {
@@ -178,7 +183,8 @@
       "agotado": false,
       "image": "cards/img/ARMORED-CORE-VI-220x274.jpg",
       "title": "Armored Core VI Fires of Rubicon PS4",
-      "price": "41964"
+      "price": "41964",
+      "status": "masVendido"
     },
 
     {
@@ -187,7 +193,8 @@
       "agotado": false,
       "image": "cards/img/ASSETTO-CORSA-220x274.jpg",
       "title": "Assetto Corsa",
-      "price": "9764"
+      "price": "9764",
+      "status": "masVendido"
     },
 
     {
@@ -216,7 +223,8 @@
       "agotado": false,
       "image": "cards/img/BATTLEFIELD-4-321x400.jpg",
       "title": "Battlefield 4",
-      "price": "17814"
+      "price": "17814",
+      "status": "ofertas"
     },
 
     {
@@ -234,7 +242,8 @@
       "agotado": false,
       "image": "cards/img/ZOMBIE-ARMY-4.jpg",
       "title": "Zombie Army 4: Dead War",
-      "price": "34850"
+      "price": "34850",
+      "status": "masVendido"
     },
     {
       "id": "26",
@@ -260,7 +269,8 @@
       "agotado": false,
       "image": "cards/img/UNRAVEL-220x274.jpg",
       "title": "Unravel Pack 1+2",
-      "price": "13490"
+      "price": "13490",
+      "status": "masVendido"
     },
     {
       "id": "29",
@@ -268,7 +278,8 @@
       "agotado": false,
       "image": "cards/img/UNCHARTED-4-BUNDLE-220x274.jpg",
       "title": "Uncharted 4",
-      "price": "15490"
+      "price": "15490",
+      "status": "preventa"
     },
     {
       "id": "30",
@@ -285,7 +296,8 @@
       "agotado": false,
       "image": "cards/img/TONY-HAWKS-12-220x274.jpg",
       "title": "Tony Hawks Pro Skater 1 y 2",
-      "price": "16490"
+      "price": "16490",
+      "status": "preventa"
     },
     {
       "id": "32",
@@ -293,7 +305,8 @@
       "agotado": false,
       "image": "cards/img/THE-DIVISION-2-PS4-220x274.jpg",
       "title": "Tom Clancy´s The Division 2",
-      "price": "15490"
+      "price": "15490",
+      "status": "preventa"
     },
     {
       "id": "33",
@@ -310,7 +323,8 @@
       "agotado": false,
       "image": "cards/img/RAINBOW-SIX-SIEGE-EXTRACTION-220x274.jpg",
       "title": "Tom Clancy´s Rainbows Six: Extraction",
-      "price": "15490"
+      "price": "15490",
+      "status": "ofertas"
     },
     {
       "id": "35",
@@ -318,7 +332,8 @@
       "agotado": false,
       "image": "cards/img/GHOST-RECON-BREAKPOINT-PS4-220x274.jpg",
       "title": "Tom Clancy´s Ghost Recon Breakpoint",
-      "price": "45490"
+      "price": "45490",
+      "status": "ofertas"
     },
     {
       "id": "36",
@@ -326,7 +341,8 @@
       "agotado": false,
       "image": "cards/img/THE-WITCHER-3-220x274.jpg",
       "title": "The Witcher 3: Wild Hunt - Subtitulado",
-      "price": "15490"
+      "price": "15490",
+      "status": "preventa"
     },
     {
       "id": "37",
@@ -334,7 +350,8 @@
       "agotado": false,
       "image": "cards/img/THE-TEXAS-MASSACRE-220x274.jpg",
       "title": "The Texas Saw Massacre",
-      "price": "28490"
+      "price": "28490",
+      "status": "ofertas"
     },
     {
       "id": "38",
@@ -342,7 +359,8 @@
       "agotado": false,
       "image": "cards/img/THE-LAST-OF-US-REMASTERED-1-220x274.jpg",
       "title": "The Last of us Remastered",
-      "price": "19465"
+      "price": "19465",
+      "status": "ofertas"
     },
     {
       "id": "39",
@@ -350,7 +368,8 @@
       "agotado": false,
       "image": "cards/img/THE-LAST-OF-US-PARTE-2-220x274.jpg",
       "title": "The Last of us Parte 2",
-      "price": "36490"
+      "price": "36490",
+      "status": "preventa"
     },
     {
       "id": "40",
@@ -358,7 +377,8 @@
       "agotado": false,
       "image": "cards/img/THE-HUNTER-WILD-220x274.jpg",
       "title": "The Hunter: Call of the Wild",
-      "price": "23490"
+      "price": "23490",
+      "status": "ofertas"
     },
     {
       "id": "41",
@@ -366,7 +386,8 @@
       "agotado": false,
       "image": "cards/img/STRAY-1-220x274.jpg",
       "title": "Stray",
-      "price": "22490"
+      "price": "22490",
+      "status": "preventa"
     },
     {
       "id": "42",
@@ -374,7 +395,8 @@
       "agotado": false,
       "image": "cards/img/SPIDERMAN-GOTY-1-220x274.jpg",
       "title": "Spider-Man: Game of The Year Español",
-      "price": "23490"
+      "price": "23490",
+      "status": "preventa"
     },
     {
       "id": "43",
@@ -382,7 +404,8 @@
       "agotado": false,
       "image": "cards/img/SPIDERMAN-MILES-MORALES-1-220x274.jpg",
       "title": "Spider-Man: Miles Morales",
-      "price": "23490"
+      "price": "23490",
+      "status": "masVendido"
     },
     {
       "id": "44",
@@ -390,7 +413,8 @@
       "agotado": false,
       "image": "cards/img/SONIC-MANIA-220x274.jpg",
       "title": "Sonic Mania",
-      "price": "15490"
+      "price": "15490",
+      "status": "masVendido"
     },
     {
       "id": "45",
@@ -398,7 +422,8 @@
       "agotado": false,
       "image": "cards/img/SONIC-ORIGINS-220x274.jpg",
       "title": "Sonic Origins",
-      "price": "36490"
+      "price": "36490",
+      "status": "preventa"
     }
   ],
   "cart": []

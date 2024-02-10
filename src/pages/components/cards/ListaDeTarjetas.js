@@ -6,8 +6,6 @@ import Spinner from "../assets/Spinner";
 const ListaDeTarjetas = () => {
   const [state, dispatch] = useContext(ProductsContext);
   const { products, cart, filtro } = state;
-  console.log("productos",products.length ==45 && filtro.length ==0  );
-  console.log("filtro",filtro.length);
 
   const addToCart = (id) => {
     dispatch({ type: "ADD_TO_CART", payload: id });

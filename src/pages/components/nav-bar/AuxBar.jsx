@@ -3,15 +3,9 @@ import styles from "@/styles/CartNavBar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import Image from "react-bootstrap/Image";
-import Badge from "react-bootstrap/Badge";
 import Dropdown from "react-bootstrap/Dropdown";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ProductsContext } from "@/pages/components/Reducer+Context/Reducer+Context";
-import ModalCompras from "./ModalCompras";
 
 function AuxBar() {
   const [state, dispatch] = useContext(ProductsContext);
