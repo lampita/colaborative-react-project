@@ -1,35 +1,13 @@
 import Product from "./Productos";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ProductsContext } from "@/pages/components/Reducer+Context/Reducer+Context";
-import axios from "axios";
-
-
-
+import Spinner from "../assets/Spinner";
 
 const ListaDeTarjetas = () => {
   const [state, dispatch] = useContext(ProductsContext);
-  const { products, cart } = state;
-
-  const updateState = async () => {
-    const ENDPOINTS = {
-      products: "http://localhost:5000/products",
-      cart: "http://localhost:5000/cart",
-    };
-    const responseProducts = await axios.get(ENDPOINTS.products);
-    const responseCart = await axios.get(ENDPOINTS.cart);
-
-    const productList = await responseProducts.data;
-
-    const cartItems = await responseCart.data;
-    dispatch({
-      type: "READ_STATE",
-      payload: { products: productList, cart: cartItems },
-    });
-  };
-
-  useEffect(() => {
-    updateState();
-  }, []);
+  const { products, cart, filtro } = state;
+  console.log("productos",products.length ==45 && filtro.length ==0  );
+  console.log("filtro",filtro.length);
 
   const addToCart = (id) => {
     dispatch({ type: "ADD_TO_CART", payload: id });
@@ -37,15 +15,37 @@ const ListaDeTarjetas = () => {
 
   return (
     <>
+      {/* <Spinner /> */}
+
       <div className="container">
         <div className="cards-list">
-          {products.map((product) => (
-            <Product
-              key={product.id}
-              product={product}
-              addToCart={(id) => addToCart(product.id)}
-            />
-          ))}
+        
+        <div className="container">
+  <div className="cards-list">
+    {products.length ==45 && filtro.length ==0 ? (
+      // Render filtered products using 'filtro'
+      products.map((product) => (
+        <Product
+          key={product.id}
+          product={product}
+          addToCart={(id) => addToCart(id)}
+        />
+      ))
+    ) : (
+      // Render all products using 'products'
+      filtro.map((product) => (
+        <Product
+          key={product.id}
+          product={product}
+          addToCart={(id) => addToCart(id)}
+        />
+      ))
+    )}
+  </div>
+</div>
+
+
+
         </div>
       </div>
       <style jsx>{`
