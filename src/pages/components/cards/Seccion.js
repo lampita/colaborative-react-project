@@ -1,39 +1,40 @@
-import React from 'react'
-import ListaDeTarjetas from './ListaDeTarjetas'
+import React from "react";
+import ListaDeTarjetas from "./ListaDeTarjetas";
 
 const Seccion = () => {
   return (
     <>
-    <section>
-      
-   <h2 className="cat"><hr/>CATALOGO PS4<hr/></h2>
-    
-    
-      <ListaDeTarjetas />
-     
-    </section>
-  
-    <style jsx>{`
+      <section className="cont">
+        <hr />
+        <h3 className="cat">
+          
+          CATALOGO PS4
+          
+        </h3>
+        <hr />
+        <ListaDeTarjetas />
+      </section>
 
-    .cat {
-      color: white;
-      display: flex;
-      justify-content: center;
-            }
-   hr {
-      vertical-align: middle;
-      height: 0px;
-      width: 40%;
-      display: inline-block;
-      border: 1px solid white;
-      margin-top: 15px;
-      
-          }
-    
+      <style jsx>{`
+        .cont{padding:0rem;
 
+        }
+        .cat {
+          color: white;
+          display: flex;
+          justify-content: center;
+        }
+        hr {
+          vertical-align: middle;
+          height: 3px;
+          width: 100%;
+          display: inline-block;
+          border: 1px solid white;
+          margin: 1rem;
+        }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default Seccion
+export default Seccion;

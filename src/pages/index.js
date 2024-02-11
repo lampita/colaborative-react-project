@@ -3,16 +3,13 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 import { ProductsContextProvider } from "@/pages/components/Reducer+Context/Reducer+Context";
 import CartNavBar from "./components/nav-bar/CartNavBar.jsx";
-import AuxBar from "./components/nav-bar/AuxBar.jsx";
+import AuxBar3 from "./components/nav-bar/AuxBar3.jsx";
 import Carrusel from "./components/carusel/carrucel.jsx";
 import Seccion from "./components/cards/Seccion.js";
 import CaruselOwl from "./components/owl-carusel/CaruselOwl.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
-
 export default function Home() {
-
-
   return (
     <>
       <Head>
@@ -25,8 +22,9 @@ export default function Home() {
       <main>
         <ProductsContextProvider>
           <CartNavBar />
-          <AuxBar />
           <Carrusel />
+          <AuxBar3 />
+
           <Seccion />
         </ProductsContextProvider>
         <CaruselOwl />

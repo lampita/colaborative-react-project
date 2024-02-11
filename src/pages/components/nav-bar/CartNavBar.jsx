@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "@/styles/CartNavBar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import { Row,Col,Dropdown } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -21,9 +22,6 @@ function CartNavBar() {
     0
   );
 
-  const opcionMapeo = (op) => {
-    dispatch({ type: "OPCION_DE_MAPEO", payload: op });
-  };
 
   return (
     <>
@@ -38,7 +36,7 @@ function CartNavBar() {
             className={styles.img_display}
           />
 
-          <div className={styles.brand}>Maluma-Store</div>
+          <div className={styles.brand}><a style={{color:"white"}} href="http://localhost:3000/"> Maluma-Store</a></div>
 
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -78,6 +76,90 @@ function CartNavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+
+    <Container variant="dark" fluid style={{ height:"3rem", position:"fixed", top:"top", zIndex:"5000"}}>
+      <Row style={{ backgroundColor:"red", paddingBottom:"0.5rem"}}>
+        <Col><Dropdown>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item  >Demo 1</Dropdown.Item>
+        <Dropdown.Item >Demo 2</Dropdown.Item>
+        <Dropdown.Item >Demo 3</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Col>
+        <Col><Dropdown>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Col>
+        <Col><Dropdown>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Col>
+        <Col><Dropdown>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Col>
+        <Col><Dropdown>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Col>
+        <Col><Dropdown>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Col>
+        
+      </Row>
+    </Container>
+
+
+    
+    
+    
     </>
   );
 }

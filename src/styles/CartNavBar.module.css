@@ -4,7 +4,6 @@
 @media screen and (max-width: 576px) {
   .img_display {
     display: none;
-
   }
 }
 
@@ -13,16 +12,13 @@
 }
 .brand,
 .container {
-  color: white;
   background-color: black;
   font-size: 1.4rem;
 }
 
 .brand:hover {
-  
-  color: rgba(255, 255, 255, 1) !important;
-  box-shadow: 0.8rem 1rem 2.5rem 0.5rem rgb(24, 71, 89);
-  transition: all 0.2s ease;
+  transition: all 0.5s;
+  font-size: 1.5rem;
 }
 
 .container_1 {
@@ -35,14 +31,4 @@
 .burga_boton {
   background-color: #616161;
 }
-.container_2 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  margin-top: 2.4rem;
-  
-  
-}
 
-.press:active {
-  background-color: #ccc;
-}

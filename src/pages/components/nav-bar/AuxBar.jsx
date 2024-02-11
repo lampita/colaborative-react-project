@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "@/styles/CartNavBar.module.css";
+import styles from "@/styles/AuxBar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -21,9 +21,9 @@ function AuxBar() {
 
   return (
     <>
-      <Navbar expand="sm" style={{ padding: "0rem", }}>
+      <Navbar className={styles.container_2} expand="sm" >
         <Container
-          className={styles.container_2}
+          
           fluid
           style={{
             justifyContent: "space-evenly",
@@ -31,19 +31,21 @@ function AuxBar() {
             flexWrap: "wrap",
             gap: "1rem",
             position:"fixed",
-            zIndex: 50
+            zIndex: 50,
+            backgroundColor:"black"
           }}
         >
           <Nav.Link href="#home">INICIO</Nav.Link>
 
-          <Dropdown>
+          <Dropdown >
             <Dropdown.Toggle
-              style={{ color: "white" }}
+              style={{color:"white"}}
               variant=""
               id="dropdown-basic"
             >
               PLAYSTATION 4
             </Dropdown.Toggle>
+            
             <Dropdown.Menu
               variant="dark"
               style={{

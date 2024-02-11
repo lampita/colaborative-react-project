@@ -63,7 +63,7 @@ const Product = ({ product, addToCart }) => {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
+          <DialogContentText component="span" id="alert-dialog-slide-description">
           <div>Agregar al carrito</div><div className="msg">{title.toUpperCase()} ?</div>
           </DialogContentText>
         </DialogContent>

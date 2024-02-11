@@ -15,42 +15,29 @@ const ListaDeTarjetas = () => {
     <>
       {/* <Spinner /> */}
 
-      <div className="container">
-        <div className="cards-list">
-        
-        <div className="container">
-  <div className="cards-list">
-    {products.length ==45 && filtro.length ==0 ? (
-      // Render filtered products using 'filtro'
-      products.map((product) => (
-        <Product
-          key={product.id}
-          product={product}
-          addToCart={(id) => addToCart(id)}
-        />
-      ))
-    ) : (
-      // Render all products using 'products'
-      filtro.map((product) => (
-        <Product
-          key={product.id}
-          product={product}
-          addToCart={(id) => addToCart(id)}
-        />
-      ))
-    )}
-  </div>
-</div>
 
+            <div className="cards-list">
+              {products.length == 45 && filtro.length == 0
+                ? products.map((product) => (
+                    <Product
+                      key={product.id}
+                      product={product}
+                      addToCart={(id) => addToCart(id)}
+                    />
+                  ))
+                : filtro.map((product) => (
+                    <Product
+                      key={product.id}
+                      product={product}
+                      addToCart={(id) => addToCart(id)}
+                    />
+                  ))}
+            </div>
 
-
-        </div>
-      </div>
       <style jsx>{`
         .container {
           width: 100%;
-          heigth: 100%;
-          background-color: black;
+          background-color: red;
         }
         .cards-list {
           display: flex;
