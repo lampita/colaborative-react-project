@@ -17,7 +17,7 @@ const CaruselOwl = () => {
         spaceBetween={8}
         slidesPerView={3}
         navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: false }}
         breakpoints= {{
