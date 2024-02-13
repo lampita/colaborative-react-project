@@ -32,3 +32,6 @@
   background-color: #616161;
 }
 
+.press:active {
+  background-color: #ccc;
+}

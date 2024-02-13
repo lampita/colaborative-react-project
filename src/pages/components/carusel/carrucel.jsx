@@ -5,13 +5,11 @@ import styles from "@/styles/carusel.module.css";
 
 const Carrusel = () => {
   return (
-
-    <Carousel indicators={false} controls={false} style={{marginTop:"3rem"}}>
-      <Carousel.Item interval={6000} >
-
+    <Carousel indicators={false} controls={false} style={{ marginTop: "3rem" }}>
+      <Carousel.Item interval={6000}>
         <img
           className="d-block w-100"
-          style={{ maxWidth: "100%", margin: "0 auto", }}
+          style={{ maxWidth: "100%", margin: "0 auto" }}
           src="/carusel/img/intro.jpg"
           alt="pantalla intro"
         />
@@ -20,7 +18,7 @@ const Carrusel = () => {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          style={{ maxWidth: "100%", margin: "0 auto", }}
+          style={{ maxWidth: "100%", margin: "0 auto" }}
           src="/carusel/img/imagen1.jpg"
           alt="lego2k"
         />
@@ -35,7 +33,7 @@ const Carrusel = () => {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          style={{ maxWidth: "100%", margin: "0 auto", }}
+          style={{ maxWidth: "100%", margin: "0 auto" }}
           src="/carusel/img/imagen2.jpg"
           alt="sable"
         />
@@ -52,7 +50,7 @@ const Carrusel = () => {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          style={{ maxWidth: "100%", margin: "0 auto", }}
+          style={{ maxWidth: "100%", margin: "0 auto" }}
           src="/carusel/img/imagen3.jpg"
           alt="powerwash"
         />

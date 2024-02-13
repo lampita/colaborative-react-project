@@ -1,8 +1,7 @@
 //import { shoppingInitialState } from "../../initial-state/InitialState";
 import React, { useReducer, createContext, useEffect } from "react";
 import { TYPES } from "../../actions/actions";
-import axios from "axios";
-
+import axios from "axios"
 export const ProductsContext = createContext();
 const shoppingInitialState = { products: [], cart: [], filtro: [] };
 
@@ -87,6 +86,7 @@ const ShoppingReducer = (state, action) => {
 };
 
 export const ProductsContextProvider = ({ children }) => {
+  
   const updateState = async () => {
     const responseProducts = await axios.get(ENDPOINTS.products);
     const responseCart = await axios.get(ENDPOINTS.cart);

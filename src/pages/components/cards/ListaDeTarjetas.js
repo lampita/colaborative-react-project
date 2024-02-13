@@ -1,8 +1,6 @@
 import Product from "./Productos";
 import { useContext } from "react";
 import { ProductsContext } from "@/pages/components/Reducer+Context/Reducer+Context";
-import Spinner from "../assets/Spinner";
-
 const ListaDeTarjetas = () => {
   const [state, dispatch] = useContext(ProductsContext);
   const { products, cart, filtro } = state;
@@ -13,26 +11,23 @@ const ListaDeTarjetas = () => {
 
   return (
     <>
-      {/* <Spinner /> */}
-
-
-            <div className="cards-list">
-              {products.length == 45 && filtro.length == 0
-                ? products.map((product) => (
-                    <Product
-                      key={product.id}
-                      product={product}
-                      addToCart={(id) => addToCart(id)}
-                    />
-                  ))
-                : filtro.map((product) => (
-                    <Product
-                      key={product.id}
-                      product={product}
-                      addToCart={(id) => addToCart(id)}
-                    />
-                  ))}
-            </div>
+      <div className="cards-list">
+        {products.length == 45 && filtro.length == 0
+          ? products.map((product) => (
+              <Product
+                key={product.id}
+                product={product}
+                addToCart={(id) => addToCart(id)}
+              />
+            ))
+          : filtro.map((product) => (
+              <Product
+                key={product.id}
+                product={product}
+                addToCart={(id) => addToCart(id)}
+              />
+            ))}
+      </div>
 
       <style jsx>{`
         .container {
