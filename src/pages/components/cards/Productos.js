@@ -6,9 +6,21 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import Slide from "@mui/material/Slide";
 import Tooltip from "@mui/material/Tooltip";
+import Rating from '@mui/material/Rating';
+
+
+function Estrellas(rating) {
+
+ return (
+    
+          <Rating name="read-only" value={rating} defaultValue={1} readOnly size="small" />
+    
+  );
+}
 
 const Product = ({ product, addToCart }) => {
   const { image, title, price, stars, agotado, id } = product;
+
 
   const handleOpenDialog = () => {
     setOpen(true);
@@ -29,6 +41,7 @@ const Product = ({ product, addToCart }) => {
         <figcaption>
           <div className="encabezado">JUEGO DIGITAL PS4</div>
           <div className="cuerpo">
+       
             <Tooltip title={title.toUpperCase()} placement="top" arrow>
               <div>
                 {title.length > 20 ? (
@@ -39,7 +52,9 @@ const Product = ({ product, addToCart }) => {
                 <div>{Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 }).format(price)}</div>
               </div>
             </Tooltip>
+                  {Estrellas(stars)}
           </div>
+  
           <div className="pie">
             <Button
               variant="contained"
@@ -62,8 +77,8 @@ const Product = ({ product, addToCart }) => {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogContent>
-          <DialogContentText  id="alert-dialog-slide-description">
+        <DialogContent >
+          <DialogContentText component="span"  id="alert-dialog-slide-description">
           <div>Agregar al carrito</div><div className="msg">{title.toUpperCase()} ?</div>
           </DialogContentText>
         </DialogContent>

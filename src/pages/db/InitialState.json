@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "1",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/XBOX-SERIES-5-2-220x275.png",
       "title": "EA SPORTS FC 24 PS4",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/NBA2K24.png",
       "title": "NBA 2K24 PS4",
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/CALL-OF-DUTY-MODERN-WARFARE-2-220x274.jpg",
       "title": "CALL OF DUTY MODERN WARFARE II PS4",
@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/dead-island.png",
       "title": "Dead Island II PS4",
@@ -39,7 +39,7 @@
 
     {
       "id": "5",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/RESIDENT-EVIL-4-REMAKE-220x274.jpg",
       "title": "Resident Evil 4 Remake PS4",
@@ -49,7 +49,7 @@
 
     {
       "id": "6",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/WWE-2K23-PS4-DIGITAL--220X274.jpg",
       "title": "WWE 2K23",
@@ -59,7 +59,7 @@
 
     {
       "id": "7",
-      "stars": "5",
+      "stars": 2,
       "agotado": false,
       "image": "cards/img/GOD-OF-WAR-RAGNAROK-220x274.jpg",
       "title": "God of War Ragnarok",
@@ -69,7 +69,7 @@
 
     {
       "id": "8",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/FIFA-23-220x274.jpg",
       "title": "Fifa 23 Español Latino PS4",
@@ -79,7 +79,7 @@
 
     {
       "id": "9",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/NBA-2K23-220x274.jpg",
       "title": "NBA 2K23",
@@ -89,7 +89,7 @@
 
     {
       "id": "10",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/GTA-TRILOGY-DEFINITIVE-EDITION-220x274.jpg",
       "title": "GTA Trilogi",
@@ -99,7 +99,7 @@
 
     {
       "id": "11",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/A-WAY-OUT-220x274.jpg",
       "title": "A Way Out PS4",
@@ -109,7 +109,7 @@
 
     {
       "id": "12",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/ACE-COMBAT-8-SKIES-220x274.jpg",
       "title": "Ace Combat 7: Skies Unknown",
@@ -119,7 +119,7 @@
 
     {
       "id": "13",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/AIRPORT-SIMULATOR-DAY-NIGHT-1-220x275.jpg",
       "title": "Airport Simulator : Day & Night",
@@ -129,7 +129,7 @@
 
     {
       "id": "14",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/ALAN-WAKE-REMASTERED-220X275.jpg",
       "title": "Alan Wake: Remastered",
@@ -139,7 +139,7 @@
 
     {
       "id": "15",
-      "stars": "5",
+      "stars": 2,
       "agotado": false,
       "image": "cards/img/XBOX-SERIES-6-220x275.png",
       "title": "Alien: Isolation ",
@@ -149,7 +149,7 @@
 
     {
       "id": "16",
-      "stars": "5",
+      "stars": 1,
       "agotado": false,
       "image": "cards/img/XBOX-SERIES-7-220x275.png",
       "title": "Anthem",
@@ -159,7 +159,7 @@
 
     {
       "id": "17",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/AO-INTERNACIONAL-TENNIS-220x274.jpg",
       "title": "AO International Tennis",
@@ -169,7 +169,7 @@
 
     {
       "id": "18",
-      "stars": "5",
+      "stars": 2,
       "agotado": false,
       "image": "cards/img/ARK-SURVIVAL-EVOLVED-220x274.jpg",
       "title": "Ark Survival Evolved",
@@ -179,7 +179,7 @@
 
     {
       "id": "19",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/ARMORED-CORE-VI-220x274.jpg",
       "title": "Armored Core VI Fires of Rubicon PS4",
@@ -189,7 +189,7 @@
 
     {
       "id": "20",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/ASSETTO-CORSA-220x274.jpg",
       "title": "Assetto Corsa",
@@ -199,7 +199,7 @@
 
     {
       "id": "21",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/BATTLEFIELD-2042-321x400.jpg",
       "title": "Battlefield 2042",
@@ -209,7 +209,7 @@
 
     {
       "id": "22",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/BATTLEFIELD-1-321x400.jpg",
       "title": "Battlefield 1",
@@ -219,7 +219,7 @@
 
     {
       "id": "23",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/BATTLEFIELD-4-321x400.jpg",
       "title": "Battlefield 4",
@@ -229,7 +229,7 @@
 
     {
       "id": "24",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/BATTLEFIELD-HARDLINE-321x400.jpg",
       "title": "Battlefield Hardline",
@@ -238,7 +238,7 @@
     },
     {
       "id": "25",
-      "stars": "5",
+      "stars": 2,
       "agotado": false,
       "image": "cards/img/ZOMBIE-ARMY-4.jpg",
       "title": "Zombie Army 4: Dead War",
@@ -247,7 +247,7 @@
     },
     {
       "id": "26",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/wrc-generations-1-220x275.png",
       "title": "WRC Generations PS4",
@@ -256,7 +256,7 @@
     },
     {
       "id": "27",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/VAMPYR-220x274.jpg",
       "title": "Vampyr",
@@ -265,7 +265,7 @@
     },
     {
       "id": "28",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/UNRAVEL-220x274.jpg",
       "title": "Unravel Pack 1+2",
@@ -274,7 +274,7 @@
     },
     {
       "id": "29",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/UNCHARTED-4-BUNDLE-220x274.jpg",
       "title": "Uncharted 4",
@@ -283,7 +283,7 @@
     },
     {
       "id": "30",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/UFC-4-1-220x274.jpg",
       "title": "UFC 4",
@@ -292,7 +292,7 @@
     },
     {
       "id": "31",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/TONY-HAWKS-12-220x274.jpg",
       "title": "Tony Hawks Pro Skater 1 y 2",
@@ -301,7 +301,7 @@
     },
     {
       "id": "32",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/THE-DIVISION-2-PS4-220x274.jpg",
       "title": "Tom Clancy´s The Division 2",
@@ -310,7 +310,7 @@
     },
     {
       "id": "33",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/RAIMBOW-SIX-SIEGE-220x274.jpg",
       "title": "Tom Clancy´s Rainbows Six Siegue SUBS",
@@ -319,7 +319,7 @@
     },
     {
       "id": "34",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/RAINBOW-SIX-SIEGE-EXTRACTION-220x274.jpg",
       "title": "Tom Clancy´s Rainbows Six: Extraction",
@@ -328,7 +328,7 @@
     },
     {
       "id": "35",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/GHOST-RECON-BREAKPOINT-PS4-220x274.jpg",
       "title": "Tom Clancy´s Ghost Recon Breakpoint",
@@ -337,7 +337,7 @@
     },
     {
       "id": "36",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/THE-WITCHER-3-220x274.jpg",
       "title": "The Witcher 3: Wild Hunt - Subtitulado",
@@ -346,7 +346,7 @@
     },
     {
       "id": "37",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/THE-TEXAS-MASSACRE-220x274.jpg",
       "title": "The Texas Saw Massacre",
@@ -355,7 +355,7 @@
     },
     {
       "id": "38",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/THE-LAST-OF-US-REMASTERED-1-220x274.jpg",
       "title": "The Last of us Remastered",
@@ -364,7 +364,7 @@
     },
     {
       "id": "39",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/THE-LAST-OF-US-PARTE-2-220x274.jpg",
       "title": "The Last of us Parte 2",
@@ -373,7 +373,7 @@
     },
     {
       "id": "40",
-      "stars": "5",
+      "stars": 4,
       "agotado": false,
       "image": "cards/img/THE-HUNTER-WILD-220x274.jpg",
       "title": "The Hunter: Call of the Wild",
@@ -382,7 +382,7 @@
     },
     {
       "id": "41",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/STRAY-1-220x274.jpg",
       "title": "Stray",
@@ -391,7 +391,7 @@
     },
     {
       "id": "42",
-      "stars": "5",
+      "stars": 2,
       "agotado": false,
       "image": "cards/img/SPIDERMAN-GOTY-1-220x274.jpg",
       "title": "Spider-Man: Game of The Year Español",
@@ -400,7 +400,7 @@
     },
     {
       "id": "43",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/SPIDERMAN-MILES-MORALES-1-220x274.jpg",
       "title": "Spider-Man: Miles Morales",
@@ -409,7 +409,7 @@
     },
     {
       "id": "44",
-      "stars": "5",
+      "stars": 3,
       "agotado": false,
       "image": "cards/img/SONIC-MANIA-220x274.jpg",
       "title": "Sonic Mania",
@@ -418,7 +418,7 @@
     },
     {
       "id": "45",
-      "stars": "5",
+      "stars": 5,
       "agotado": false,
       "image": "cards/img/SONIC-ORIGINS-220x274.jpg",
       "title": "Sonic Origins",

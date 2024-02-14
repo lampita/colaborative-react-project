@@ -16,7 +16,7 @@ const Seccion = () => {
       </section>
 
       <style jsx>{`
-        .cont{padding:0rem;
+        .cont{padding:0rem; margin-top: 3rem; margin-bottom: 8rem
 
         }
         .cat {
