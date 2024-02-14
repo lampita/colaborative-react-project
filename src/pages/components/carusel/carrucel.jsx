@@ -5,10 +5,8 @@ import styles from "@/styles/carusel.module.css";
 
 const Carrusel = () => {
   return (
-
-    <Carousel indicators={false} controls={false}>
+    <Carousel indicators={false} controls={false} style={{ marginTop: "3rem" }}>
       <Carousel.Item interval={6000}>
-
         <img
           className="d-block w-100"
           style={{ maxWidth: "100%", margin: "0 auto" }}

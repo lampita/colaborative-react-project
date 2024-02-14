@@ -7,17 +7,18 @@
 }
 .cardItem{
  
-    background-color: #ac9fee;
+    background-color: #000000;
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 .swiper_container{
     height: 100%;
     width: 98%;
-    padding: 0.1rem;
+    padding: 1rem;
     margin-top: 3rem;
     margin-left: 0.8rem;
     margin-right: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
     display: flex;
    
 }

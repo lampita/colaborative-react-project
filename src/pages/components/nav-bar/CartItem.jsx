@@ -43,33 +43,33 @@ const CartItem = ({ item, deleteFromCart, handleClose, addToCart }) => {
                 justifyContent: "space-evenly",
               }}
             >
-              <Tooltip title="Agregar uno" placement="top">
+              <Tooltip title="Agregar uno" placement="top" PopperProps={{style:{zIndex:9000}}}>
                 <img
                   src="/nav-bar/playTriangulo.png"
                   style={{ width: "3rem", margin: "0.5rem" }}
                   onClick={() => addToCart(item.id)}
                 ></img>
               </Tooltip>
-              <Tooltip title="Eliminar Uno" placement="top">
+              <Tooltip title="Eliminar Uno" placement="top" PopperProps={{style:{zIndex:9000}}}>
                 <img
                   src="/nav-bar/playRedondo.png"
-                  style={{ width: "3rem", margin: "0.5rem" }}
+                  style={{ width: "3rem", margin: "0.5rem"}}
                   onClick={() => deleteFromCart(id, false)}
                 ></img>
               </Tooltip>
             </div>
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-              <Tooltip title="Eliminar Todos" placement="bottom">
+              <Tooltip title="Eliminar Todos" placement="bottom" PopperProps={{style:{zIndex:9000}}}>
                 <img
                   src="/nav-bar/playCuadrado.png"
-                  style={{ width: "3rem", margin: "0.5rem" }}
+                  style={{ width: "3rem", margin: "0.5rem",zIndex:"3000" }}
                   onClick={() => deleteFromCart(id, true)}
                 ></img>
               </Tooltip>
-              <Tooltip title="Cerrar Carrito" placement="bottom">
+              <Tooltip title="Cerrar Carrito" placement="bottom" PopperProps={{style:{zIndex:9000}}} >
                 <img
                   src="/nav-bar/playX.png"
-                  style={{ width: "3rem", margin: "0.5rem" }}
+                  style={{ width: "3rem", margin: "0.5rem",zIndex:"5000"}}
                   onClick={() => handleClose()}
                 ></img>
               </Tooltip>
@@ -86,7 +86,7 @@ const CartItem = ({ item, deleteFromCart, handleClose, addToCart }) => {
               }}
             >
               <div style={{ fontSize: "0.9rem" }}>
-                <Tooltip title={title} placement="top" arrow>
+                <Tooltip title={title} placement="top" arrow PopperProps={{style:{zIndex:9000}}}>
                   <strong>
                     {title.slice(0, 20 - 1).toUpperCase() + " \u2026"}
                   </strong>
