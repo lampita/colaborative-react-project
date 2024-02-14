@@ -8,8 +8,8 @@ const Seccion = () => {
       
    <h2 className="cat"><hr/>CATALOGO PS4<hr/></h2>
     
-    
-      <ListaDeTarjetas />
+   
+      
      
     </section>
   

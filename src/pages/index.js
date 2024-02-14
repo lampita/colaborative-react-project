@@ -17,7 +17,7 @@ import { shoppingInitialState } from "./initial-state/InitialState.jsx";
 import Carrusel from "./components/carusel/carrucel.jsx";
 
 import CaruselOwl from "./components/owl-carusel/CaruselOwl.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 
 
