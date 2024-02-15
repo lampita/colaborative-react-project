@@ -29,8 +29,6 @@ function ModalCompras(props) {
     dispatch({ type: "ADD_TO_CART", payload: id });
   };
 
-
-
   return (
     <>
       <Modal
@@ -39,6 +37,7 @@ function ModalCompras(props) {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+        style={{zIndex:"2000"}}
       >
         <Modal.Header closeButton>
           <Modal.Title>Carrito de Compras</Modal.Title>

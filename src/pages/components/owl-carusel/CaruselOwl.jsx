@@ -44,13 +44,21 @@ const CaruselOwl = () => {
       >
         <div className={styles.cardItem}>
           <div>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente1.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente2.jpg" alt="" /></SwiperSlide>
             <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente3.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente4.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente5.jpg" alt="" /></SwiperSlide>
             <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente6.jpg" alt="" /></SwiperSlide>
-            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente7.jpeg" alt="" /></SwiperSlide>
-            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente5.jpeg" alt="" /></SwiperSlide>
-            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente10.jpeg" alt="" /></SwiperSlide>
-            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente11.jpeg" alt="" /></SwiperSlide>
-            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente12.jpeg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente7.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente8.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente9.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente10.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente11.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente12.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente13.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente14.jpg" alt="" /></SwiperSlide>
+            <SwiperSlide className={styles.cardItem}><img className={styles.images} src="/owl-carusel/img/cliente15.jpg" alt="" /></SwiperSlide>
           </div>
         </div>
       </Swiper>

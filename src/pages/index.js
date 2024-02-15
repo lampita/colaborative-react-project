@@ -6,12 +6,13 @@ import CartNavBar from "./components/nav-bar/CartNavBar.jsx";
 import Carrusel from "./components/carusel/carrucel.jsx";
 import Seccion from "./components/cards/Seccion.js";
 import CaruselOwl from "./components/owl-carusel/CaruselOwl.jsx";
-import Footer from "./components/footer/Footer.jsx";
+//import Footer from "./components/footer/Footer.jsx";
+// import Pie from "./components/nav-bar/pie.jsx";
+import Footer from "./components/footer/footer.jsx";
+
 
 
 export default function Home() {
-
-
   return (
     <>
       <Head>
@@ -25,10 +26,14 @@ export default function Home() {
         <ProductsContextProvider>
           <CartNavBar />
           <Carrusel />
+
           <Seccion />
         </ProductsContextProvider>
         <CaruselOwl />
+        {/* <Pie /> */}
         <Footer />
+
+
       </main>
     </>
   );

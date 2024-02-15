@@ -1,10 +1,14 @@
 //import { shoppingInitialState } from "../../initial-state/InitialState";
 import React, { useReducer, createContext, useEffect } from "react";
 import { TYPES } from "../../actions/actions";
-
-
+import axios from "axios"
 export const ProductsContext = createContext();
-const shoppingInitialState = { products: [], cart: [] };
+const shoppingInitialState = { products: [], cart: [], filtro: [] };
+
+const ENDPOINTS = {
+  products: "http://localhost:5000/products",
+  cart: "http://localhost:5000/cart",
+};
 
 const ShoppingReducer = (state, action) => {
   switch (action.type) {
@@ -13,6 +17,19 @@ const ShoppingReducer = (state, action) => {
         ...state,
         products: action.payload.products,
         cart: action.payload.cart,
+      };
+    }
+
+    case TYPES.OPCION_DE_MAPEO: {
+      const copyDeState = [...state.products];
+
+      const filteredProducts = copyDeState.filter(
+        (product) => product.status === action.payload
+      );
+
+      return {
+        ...state,
+        filtro: [...filteredProducts],
       };
     }
 
@@ -60,7 +77,7 @@ const ShoppingReducer = (state, action) => {
       };
     }
     case TYPES.CLEAR_CART: {
-      return {...state, cart:[]}
+      return { ...state, cart: [] };
     }
 
     default:
@@ -70,7 +87,21 @@ const ShoppingReducer = (state, action) => {
 
 export const ProductsContextProvider = ({ children }) => {
   
-  
+  const updateState = async () => {
+    const responseProducts = await axios.get(ENDPOINTS.products);
+    const responseCart = await axios.get(ENDPOINTS.cart);
+    const productList = await responseProducts.data;
+    const cartItems = await responseCart.data;
+
+    dispatch({
+      type: "READ_STATE",
+      payload: { products: productList, cart: cartItems },
+    });
+  };
+
+  useEffect(() => {
+    updateState();
+  }, []);
 
   const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
 
