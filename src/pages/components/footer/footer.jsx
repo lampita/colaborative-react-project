@@ -72,7 +72,9 @@ const Footer = () => {
         {/* Botón de contacto */}
         <button className={styles.contact_button}>Contactar</button>
       
-
+        <div style={{ visibility: 'hidden', height: '40px' }}>
+          {/* Contenido invisible que ocupa espacio */}
+          </div>
 
         {/* <p><hr /></p> */}
          <p>Todos los derechos reservados. 2024 ©</p>
