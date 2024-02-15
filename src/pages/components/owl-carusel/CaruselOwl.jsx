@@ -1,4 +1,4 @@
-// import Swiper core and required modules
+
 import styles from '@/styles/carusel-owl.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';

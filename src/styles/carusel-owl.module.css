@@ -1,23 +1,46 @@
 .images{
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     padding: 0.6rem;
     border-radius: 1rem;
 }
 .cardItem{
- 
-    background-color: #ac9fee;
-    margin-right: 1rem;
+    background-color: #fcedee;
+    
+    border-radius: 0.5rem;
 }
+.swiper-button-prev, 
+.swiper-button-next{
+    background-color: #c41414 !important
+}
+
+.swiperButtonNext{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    margin-left: 0.5rem;
+}
+.swiperButtonPrev{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    margin-right: 0.5rem;
+
+}
+
 .swiper_container{
     height: 100%;
-    width: 98%;
-    padding: 0.1rem;
+    width: 97%;
+    padding: 1rem;
     margin-top: 3rem;
-    margin-left: 0.8rem;
+    margin-left: 0.6rem;
     margin-right: 1.2rem;
     margin-bottom: 3rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
