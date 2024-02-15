@@ -7,7 +7,9 @@ import Carrusel from "./components/carusel/carrucel.jsx";
 import Seccion from "./components/cards/Seccion.js";
 import CaruselOwl from "./components/owl-carusel/CaruselOwl.jsx";
 //import Footer from "./components/footer/Footer.jsx";
-import Pie from "./components/nav-bar/pie.jsx";
+// import Pie from "./components/nav-bar/pie.jsx";
+import Footer from "./components/footer/footer.jsx";
+
 
 
 export default function Home() {
@@ -28,7 +30,8 @@ export default function Home() {
           <Seccion />
         </ProductsContextProvider>
         <CaruselOwl />
-        <Pie />
+        {/* <Pie /> */}
+        <Footer />
 
 
       </main>
